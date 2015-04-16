@@ -32,9 +32,33 @@
                                     <constraint firstAttribute="width" constant="122" id="lk3-Dq-z2m"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-50-tq5" customClass="AboutMeCollectionView">
+                                <rect key="frame" x="0.0" y="251" width="614" height="315"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wtk-Wc-OgV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gxh-Bo-7xP">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Crb-50-tq5" secondAttribute="bottom" constant="34" id="2VQ-UM-9cF"/>
+                            <constraint firstItem="Crb-50-tq5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3SW-If-8MN"/>
+                            <constraint firstItem="Crb-50-tq5" firstAttribute="top" secondItem="74h-z6-b4S" secondAttribute="bottom" constant="29" id="5Xl-49-GUO"/>
+                            <constraint firstItem="Crb-50-tq5" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" constant="6.5" id="7ee-PO-tip"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="top" secondItem="I66-kV-4dX" secondAttribute="bottom" constant="21" id="BpQ-YJ-LKW"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mw7-cA-l90"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sWP-qu-keg"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D13A66C1ADFF3FC00979F32 /* AboutMeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A66B1ADFF3FC00979F32 /* AboutMeCollectionView.m */; };
 		4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF31ADF53B200FD3DE9 /* main.m */; };
 		4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */; };
 		4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D13A66A1ADFF3FC00979F32 /* AboutMeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeCollectionView.h; sourceTree = "<group>"; };
+		4D13A66B1ADFF3FC00979F32 /* AboutMeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeCollectionView.m; sourceTree = "<group>"; };
 		4D51DEEE1ADF53B200FD3DE9 /* Andrew Robinson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andrew Robinson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DEF21ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DEF31ADF53B200FD3DE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
 				4D51DEFB1ADF53B200FD3DE9 /* ViewController.h */,
 				4D51DEFC1ADF53B200FD3DE9 /* ViewController.m */,
+				4D13A66A1ADFF3FC00979F32 /* AboutMeCollectionView.h */,
+				4D13A66B1ADFF3FC00979F32 /* AboutMeCollectionView.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 			files = (
 				4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
+				4D13A66C1ADFF3FC00979F32 /* AboutMeCollectionView.m in Sources */,
 				4D51DEFD1ADF53B200FD3DE9 /* ViewController.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
 			);
@@ -429,6 +435,7 @@
 				4D51DF161ADF53B200FD3DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D51DF171ADF53B200FD3DE9 /* Build configuration list for PBXNativeTarget "Andrew RobinsonTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +444,7 @@
 				4D51DF191ADF53B200FD3DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
