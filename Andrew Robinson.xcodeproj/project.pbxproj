@@ -15,6 +15,7 @@
 		4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D51DF011ADF53B200FD3DE9 /* Images.xcassets */; };
 		4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */; };
 		4D51DF111ADF53B200FD3DE9 /* Andrew_RobinsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DF101ADF53B200FD3DE9 /* Andrew_RobinsonTests.m */; };
+		4D51DF1D1ADF587300FD3DE9 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D51DF1C1ADF587300FD3DE9 /* 402-Faceit-SirArkimedesBukkitDev.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4D51DF0A1ADF53B200FD3DE9 /* Andrew RobinsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Andrew RobinsonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DF0F1ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DF101ADF53B200FD3DE9 /* Andrew_RobinsonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Andrew_RobinsonTests.m; sourceTree = "<group>"; };
+		4D51DF1C1ADF587300FD3DE9 /* 402-Faceit-SirArkimedesBukkitDev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "402-Faceit-SirArkimedesBukkitDev.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		4D51DEF01ADF53B200FD3DE9 /* Andrew Robinson */ = {
 			isa = PBXGroup;
 			children = (
+				4D51DF1C1ADF587300FD3DE9 /* 402-Faceit-SirArkimedesBukkitDev.png */,
 				4D51DEF51ADF53B200FD3DE9 /* AppDelegate.h */,
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
 				4D51DEFB1ADF53B200FD3DE9 /* ViewController.h */,
@@ -206,6 +209,7 @@
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,
+				4D51DF1D1ADF587300FD3DE9 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
