@@ -27,7 +27,7 @@
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(100, 100)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    flowLayout.minimumLineSpacing = 40;
+    [flowLayout setMinimumLineSpacing:40.f];
     [self.collectionView setCollectionViewLayout:flowLayout];
     
 }
