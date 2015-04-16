@@ -13,17 +13,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GitHub_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-7D-J8G">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="402-Faceit-SirArkimedesBukkitDev.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-7D-J8G">
                         <rect key="frame" x="6" y="5" width="89" height="89"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="cellImage" destination="Iad-7D-J8G" id="aux-fI-1KS"/>
+            </connections>
             <point key="canvasLocation" x="435" y="418"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="GitHub_Logo.png" width="1000" height="410"/>
+        <image name="402-Faceit-SirArkimedesBukkitDev.png" width="703" height="876"/>
     </resources>
 </document>
