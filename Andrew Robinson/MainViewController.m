@@ -35,21 +35,21 @@
     
 }
 
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    
-//    CGRect viewFrame = self.collectionView.frame;
-//    viewFrame.origin.y = -viewFrame.size.height;
-//    
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:1.0];
-////    [UIView setAnimationDelay:1.0];
-//    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-//    
-//    self.collectionView.frame = viewFrame;
-//    
-//    [UIView commitAnimations];
-//}
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    CGRect viewFrame = self.collectionView.frame;
+    viewFrame.origin.y = -viewFrame.size.height;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+//    [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    self.collectionView.frame = viewFrame;
+    
+    [UIView commitAnimations];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -82,6 +82,10 @@
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     
     NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
+    
+    if (indexPath.row == 2) {
+        [self performSegueWithIdentifier:@"testId" sender:self];
+    }
     
 }
 

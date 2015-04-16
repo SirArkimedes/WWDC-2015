@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="24" id="udw-SR-5i7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="402-Faceit-SirArkimedesBukkitDev.png" translatesAutoresizingMaskIntoConstraints="NO" id="I66-kV-4dX">
@@ -72,10 +72,29 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Crb-50-tq5" id="uEP-Gf-BzM"/>
+                        <segue destination="YRt-DT-WR3" kind="presentation" identifier="testId" id="ecg-5x-vHu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S6r-1Y-LmF">
+            <objects>
+                <viewController id="YRt-DT-WR3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1uX-gx-rZX"/>
+                        <viewControllerLayoutGuide type="bottom" id="oYf-g0-KMf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="asw-PD-bA5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEf-cw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="414"/>
         </scene>
     </scenes>
     <resources>
