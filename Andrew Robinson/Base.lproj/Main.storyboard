@@ -35,7 +35,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="74h-z6-b4S" secondAttribute="bottom" constant="378" id="i6v-2H-pKE"/>
+                            <constraint firstItem="74h-z6-b4S" firstAttribute="top" secondItem="I66-kV-4dX" secondAttribute="bottom" constant="21" id="BpQ-YJ-LKW"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mw7-cA-l90"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sWP-qu-keg"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" id="xkQ-DV-0bh"/>
