@@ -25,9 +25,9 @@
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"aboutCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(200, 200)];
+    [flowLayout setItemSize:CGSizeMake(100, 100)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    
+    flowLayout.minimumLineSpacing = 40;
     [self.collectionView setCollectionViewLayout:flowLayout];
     
 }
@@ -44,7 +44,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 3;
+    return 7;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
