@@ -21,6 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Set clear color to collection view for no background.
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    
     UINib *cellNib = [UINib nibWithNibName:@"AboutCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"aboutCell"];
     
