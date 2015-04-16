@@ -35,6 +35,22 @@
     
 }
 
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    
+//    CGRect viewFrame = self.collectionView.frame;
+//    viewFrame.origin.y = -viewFrame.size.height;
+//    
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:1.0];
+////    [UIView setAnimationDelay:1.0];
+//    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+//    
+//    self.collectionView.frame = viewFrame;
+//    
+//    [UIView commitAnimations];
+//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,6 +73,15 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     return cell;
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // If you need to use the touched cell, you can retrieve it like so
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
     
 }
 
