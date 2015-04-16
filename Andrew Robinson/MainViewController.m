@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AboutCell.h"
 
 @interface MainViewController ()
 

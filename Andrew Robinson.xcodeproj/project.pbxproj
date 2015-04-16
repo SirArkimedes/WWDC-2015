@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A66E1ADFF86200979F32 /* AboutCell.xib */; };
 		4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6711ADFF98C00979F32 /* MainViewController.m */; };
+		4D13A6751AE0009500979F32 /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6741AE0009500979F32 /* AboutCell.m */; };
 		4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF31ADF53B200FD3DE9 /* main.m */; };
 		4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */; };
 		4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */; };
@@ -33,6 +34,8 @@
 		4D13A66E1ADFF86200979F32 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		4D13A6701ADFF98C00979F32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4D13A6711ADFF98C00979F32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4D13A6731AE0009500979F32 /* AboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
+		4D13A6741AE0009500979F32 /* AboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
 		4D51DEEE1ADF53B200FD3DE9 /* Andrew Robinson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andrew Robinson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DEF21ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DEF31ADF53B200FD3DE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
 				4D13A6701ADFF98C00979F32 /* MainViewController.h */,
 				4D13A6711ADFF98C00979F32 /* MainViewController.m */,
+				4D13A6731AE0009500979F32 /* AboutCell.h */,
+				4D13A6741AE0009500979F32 /* AboutCell.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
 				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
@@ -241,6 +246,7 @@
 			files = (
 				4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
+				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
 				4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */,
 			);
