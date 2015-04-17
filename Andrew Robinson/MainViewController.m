@@ -148,6 +148,8 @@
     // Constrain label to image
     [self.view removeConstraint:self.topPosition];
     
+//    [self.view layoutIfNeeded];
+    
     self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
                                                     attribute:NSLayoutAttributeTop
                                                     relatedBy:NSLayoutRelationEqual
@@ -178,6 +180,11 @@
     [self.view addConstraint:top];
     [self.view addConstraint:centerX];
     
+    [UIView animateWithDuration:1
+                     animations:^{
+                         [self.view layoutIfNeeded]; // Called on parent view
+                     }];
+    
     //        self.view animate:^() with duration: completion:^()
 
 }
@@ -187,6 +194,9 @@
     
     [self.view removeConstraint:self.topPosition];
     
+//    [self.view layoutIfNeeded];
+    
+    
     self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
                                                     attribute:NSLayoutAttributeTop
                                                     relatedBy:NSLayoutRelationEqual
@@ -195,6 +205,11 @@
                                                    multiplier:1.f
                                                      constant:20.f];
     [self.view addConstraint:self.topPosition];
+    
+    [UIView animateWithDuration:1
+                     animations:^{
+                         [self.view layoutIfNeeded]; // Called on parent view
+                     }];
     
 }
 
