@@ -148,7 +148,7 @@
     // Constrain label to image
     [self.view removeConstraint:self.topPosition];
     
-//    [self.view layoutIfNeeded];
+    [self.view layoutIfNeeded];
     
     self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
                                                     attribute:NSLayoutAttributeTop
