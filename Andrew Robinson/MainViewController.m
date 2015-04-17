@@ -12,7 +12,11 @@
 
 @interface MainViewController ()
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageOfSelf;
+@property (weak, nonatomic) IBOutlet UILabel *selfText;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPosition;
 
 @property (strong, nonatomic) NSMutableArray *items;
 
@@ -69,6 +73,7 @@
     self.collectionView.frame = viewFrame;
     
     [UIView commitAnimations];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,6 +116,85 @@
     if (indexPath.row == 2) {
         [self performSegueWithIdentifier:@"testId" sender:self];
     }
+    
+}
+
+#pragma mark - Rotation
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toOrientation duration:(NSTimeInterval)duration {
+    
+    if (toOrientation == UIInterfaceOrientationPortrait ||
+        toOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        
+        [[self view] addSubview:self.imageOfSelf];
+        
+        [self setupConstraintsforPortrait];
+        
+        
+    } else {
+        if (toOrientation == UIInterfaceOrientationLandscapeLeft ||
+            toOrientation == UIInterfaceOrientationLandscapeRight) {
+            
+            [self setupConstraintsforLandscaoe];
+            
+            [self.imageOfSelf removeFromSuperview];
+            
+        }
+    }
+}
+
+- (void)setupConstraintsforPortrait {
+    
+    // Constrain label to image
+    [self.view removeConstraint:self.topPosition];
+    
+    self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
+                                                    attribute:NSLayoutAttributeTop
+                                                    relatedBy:NSLayoutRelationEqual
+                                                       toItem:self.imageOfSelf
+                                                    attribute:NSLayoutAttributeBottom
+                                                   multiplier:1.f
+                                                     constant:20.f];
+    
+    [self.view addConstraint:self.topPosition];
+    
+    // Constrain image to view
+    NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:self.imageOfSelf
+                                                           attribute:NSLayoutAttributeTop
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:self.view
+                                                           attribute:NSLayoutAttributeTop
+                                                          multiplier:1.f
+                                                            constant:30.f];
+    
+    NSLayoutConstraint *centerX = [NSLayoutConstraint constraintWithItem:self.imageOfSelf
+                                                               attribute:NSLayoutAttributeCenterX
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:self.view
+                                                               attribute:NSLayoutAttributeCenterX
+                                                              multiplier:1.f
+                                                                constant:0.f];
+    
+    [self.view addConstraint:top];
+    [self.view addConstraint:centerX];
+    
+    //        self.view animate:^() with duration: completion:^()
+
+}
+
+
+- (void)setupConstraintsforLandscaoe {
+    
+    [self.view removeConstraint:self.topPosition];
+    
+    self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
+                                                    attribute:NSLayoutAttributeTop
+                                                    relatedBy:NSLayoutRelationEqual
+                                                       toItem:self.view
+                                                    attribute:NSLayoutAttributeTop
+                                                   multiplier:1.f
+                                                     constant:20.f];
+    [self.view addConstraint:self.topPosition];
     
 }
 
