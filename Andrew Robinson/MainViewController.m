@@ -180,6 +180,9 @@
     [self.view addConstraint:top];
     [self.view addConstraint:centerX];
     
+    // Change font size
+    self.selfText.font = [UIFont fontWithName:@"AvenirNext-Regular" size:17.f];
+    
     [UIView animateWithDuration:1
                      animations:^{
                          [self.view layoutIfNeeded]; // Called on parent view
@@ -205,6 +208,9 @@
                                                    multiplier:1.f
                                                      constant:20.f];
     [self.view addConstraint:self.topPosition];
+    
+    // Change font size
+    self.selfText.font = [UIFont fontWithName:@"AvenirNext-Regular" size:25.f];
     
     [UIView animateWithDuration:1
                      animations:^{
