@@ -37,6 +37,9 @@
     Item *thirdItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Education"];
     [self.items addObject:thirdItem];
     
+    Item *fourthItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Skills & Interests"];
+    [self.items addObject:fourthItem];
+    
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];
     
@@ -44,9 +47,10 @@
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"aboutCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(100, 100)];
+    [flowLayout setItemSize:CGSizeMake(150, 150)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flowLayout setMinimumLineSpacing:40.f];
+    [flowLayout setMinimumLineSpacing:15.f];
+    [flowLayout setMinimumInteritemSpacing:15.f];
     [self.collectionView setCollectionViewLayout:flowLayout];
     
 }

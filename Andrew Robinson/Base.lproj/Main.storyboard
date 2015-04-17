@@ -33,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-50-tq5">
-                                <rect key="frame" x="43" y="223" width="514" height="377"/>
+                                <rect key="frame" x="27" y="223" width="547" height="377"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wtk-Wc-OgV">
                                     <size key="itemSize" width="50" height="50"/>
@@ -61,9 +61,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Crb-50-tq5" secondAttribute="bottom" id="2VQ-UM-9cF"/>
-                            <constraint firstItem="Crb-50-tq5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="43" id="3SW-If-8MN"/>
+                            <constraint firstItem="Crb-50-tq5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27" id="3SW-If-8MN"/>
                             <constraint firstItem="Crb-50-tq5" firstAttribute="top" secondItem="74h-z6-b4S" secondAttribute="bottom" constant="23" id="5Xl-49-GUO"/>
-                            <constraint firstItem="Crb-50-tq5" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" constant="-0.5" id="7ee-PO-tip"/>
+                            <constraint firstItem="Crb-50-tq5" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" constant="0.5" id="7ee-PO-tip"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="top" secondItem="I66-kV-4dX" secondAttribute="bottom" constant="20" id="BpQ-YJ-LKW"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mw7-cA-l90"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sWP-qu-keg"/>
