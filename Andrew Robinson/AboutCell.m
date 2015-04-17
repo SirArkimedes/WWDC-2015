@@ -42,21 +42,21 @@
 //    // Circle it
 //    self.layer.borderColor = [[UIColor grayColor] CGColor];
 //    self.layer.borderWidth = 2;
-    self.layer.cornerRadius = self.frame.size.width/2;
-    self.layer.masksToBounds = YES;
-    
-    self.cellImage.layer.cornerRadius = self.frame.size.width/2 - 5;
-    self.cellImage.layer.masksToBounds = YES;
+//    self.layer.cornerRadius = self.frame.size.width/2;
+//    self.layer.masksToBounds = YES;
+//    
+//    self.cellImage.layer.cornerRadius = self.frame.size.width/2 - 5;
+//    self.cellImage.layer.masksToBounds = YES;
     
     //only apply the blur if the user hasn't disabled transparency effects
-    if (!UIAccessibilityIsReduceTransparencyEnabled()) {
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-        UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-        blurEffectView.frame = self.cellImage.bounds;
-        [self.cellImage addSubview:blurEffectView];
-    } else {
-        self.cellImage.backgroundColor = [UIColor blackColor];
-    }
+//    if (!UIAccessibilityIsReduceTransparencyEnabled()) {
+//        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+//        UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+//        blurEffectView.frame = self.cellImage.bounds;
+//        [self.cellImage addSubview:blurEffectView];
+//    } else {
+//        self.cellImage.backgroundColor = [UIColor blackColor];
+//    }
     
 }
 

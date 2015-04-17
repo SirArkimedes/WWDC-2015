@@ -13,6 +13,7 @@
 		4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */; };
 		4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */; };
 		4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A67C1AE01FF200979F32 /* High School logo.png */; };
+		4D21568C1AE09B190059EA08 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21568B1AE09B190059EA08 /* Item.m */; };
 		4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF31ADF53B200FD3DE9 /* main.m */; };
 		4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */; };
 		4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */; };
@@ -41,6 +42,8 @@
 		4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "402-Faceit-SirArkimedesBukkitDev.png"; path = "Assets/402-Faceit-SirArkimedesBukkitDev.png"; sourceTree = "<group>"; };
 		4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GitHub_Logo.png; path = Assets/GitHub_Logo.png; sourceTree = "<group>"; };
 		4D13A67C1AE01FF200979F32 /* High School logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High School logo.png"; path = "Assets/High School logo.png"; sourceTree = "<group>"; };
+		4D21568A1AE09B190059EA08 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		4D21568B1AE09B190059EA08 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		4D51DEEE1ADF53B200FD3DE9 /* Andrew Robinson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andrew Robinson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DEF21ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DEF31ADF53B200FD3DE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,12 +110,14 @@
 				4D13A66D1ADFF65E00979F32 /* Assets */,
 				4D51DEF51ADF53B200FD3DE9 /* AppDelegate.h */,
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
+				4D21568A1AE09B190059EA08 /* Item.h */,
+				4D21568B1AE09B190059EA08 /* Item.m */,
 				4D13A6701ADFF98C00979F32 /* MainViewController.h */,
 				4D13A6711ADFF98C00979F32 /* MainViewController.m */,
+				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
 				4D13A6731AE0009500979F32 /* AboutCell.h */,
 				4D13A6741AE0009500979F32 /* AboutCell.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
-				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
 				4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */,
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D21568C1AE09B190059EA08 /* Item.m in Sources */,
 				4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
 				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,

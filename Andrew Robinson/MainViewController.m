@@ -8,10 +8,13 @@
 
 #import "MainViewController.h"
 #import "AboutCell.h"
+#import "Item.h"
 
 @interface MainViewController ()
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSMutableArray *items;
 
 @end
 
@@ -20,6 +23,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Array readiness
+    self.items = [[NSMutableArray alloc] init];
+    
+    // Add items to array - The order of these matter in where the item is placed.
+    Item *firstItem = [[Item alloc] initWithImage:@"402-Faceit-SirArkimedesBukkitDev.png" withText:@"About Me"];
+    [self.items addObject:firstItem];
+    
+    Item *secondItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Projects"];
+    [self.items addObject:secondItem];
+    
+    Item *thirdItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Education"];
+    [self.items addObject:thirdItem];
     
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];
@@ -63,14 +79,19 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 7;
+    return [self.items count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cellIdentifier = @"aboutCell";
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    AboutCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    Item *grabbedItem = [self.items objectAtIndex:indexPath.row];
+    
+    cell.cellImage.image = [UIImage imageNamed:grabbedItem.imageName];
+    cell.cellText.text = grabbedItem.itemText;
     
     return cell;
     
