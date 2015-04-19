@@ -31,7 +31,6 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="cellImage" destination="Iad-7D-J8G" id="aux-fI-1KS"/>
                 <outlet property="cellText" destination="Uvr-zH-4OE" id="unp-Lb-Rfk"/>
