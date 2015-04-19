@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-DY-stM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="GAH-K5-exU" kind="embed" id="rXN-z3-W8W"/>
+                                </connections>
+                            </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="402-Faceit-SirArkimedesBukkitDev.png" translatesAutoresizingMaskIntoConstraints="NO" id="I66-kV-4dX">
                                 <rect key="frame" x="249" y="30" width="103" height="128"/>
                                 <constraints>
@@ -79,6 +85,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Crb-50-tq5" id="uEP-Gf-BzM"/>
+                        <outlet property="gameContainer" destination="eaF-DY-stM" id="Xhb-ar-1QZ"/>
                         <outlet property="imageOfSelf" destination="I66-kV-4dX" id="iWP-0P-fDa"/>
                         <outlet property="selfText" destination="74h-z6-b4S" id="XuO-W5-zbb"/>
                         <outlet property="topPosition" destination="BpQ-YJ-LKW" id="uOD-mf-QzD"/>
@@ -105,6 +112,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEf-cw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1463" y="251"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="jgQ-58-f4D">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GAH-K5-exU" userLabel="Game View Controller" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zgU-Jb-TpT"/>
+                        <viewControllerLayoutGuide type="bottom" id="GoX-Rj-LuJ"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s1P-2R-MfD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5h-Z4-m2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="-326"/>
         </scene>
     </scenes>
     <resources>

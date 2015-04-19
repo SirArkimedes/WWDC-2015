@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageOfSelf;
 @property (weak, nonatomic) IBOutlet UILabel *selfText;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIView *gameContainer;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPosition;
 
