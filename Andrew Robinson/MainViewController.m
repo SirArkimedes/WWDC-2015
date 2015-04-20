@@ -60,12 +60,12 @@
     
     // Blur Game
     UIVisualEffect *blurEffect;
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
     
     UIVisualEffectView *visualEffectView;
     visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     
-    visualEffectView.frame = self.gameContainer.bounds;
+    visualEffectView.frame = self.view.bounds;
     [self.gameContainer addSubview:visualEffectView];
     
 }
@@ -138,7 +138,7 @@
         toOrientation == UIInterfaceOrientationPortraitUpsideDown) {
         
         [[self view] addSubview:self.imageOfSelf];
-        
+                
         [self setupConstraintsforPortrait];
         
         
@@ -183,7 +183,7 @@
     NSLayoutConstraint *centerX = [NSLayoutConstraint constraintWithItem:self.imageOfSelf
                                                                attribute:NSLayoutAttributeCenterX
                                                                relatedBy:NSLayoutRelationEqual
-                                                                  toItem:self.view
+                                                                  toItem:self.selfText
                                                                attribute:NSLayoutAttributeCenterX
                                                               multiplier:1.f
                                                                 constant:0.f];

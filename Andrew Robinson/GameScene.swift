@@ -54,7 +54,7 @@ class GameScene: SKScene {
                 var circle = self.circle();
                 
                 self.addChild(circle)
-                circle.physicsBody?.applyForce(CGVectorMake(500, 500))
+                circle.physicsBody?.applyForce(CGVectorMake(-500, -500))
                 self.circles.append(circle)
                 
                 self.spawnMore();
