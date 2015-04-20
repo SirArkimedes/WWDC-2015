@@ -58,6 +58,16 @@
     [flowLayout setMinimumInteritemSpacing:15.f];
     [self.collectionView setCollectionViewLayout:flowLayout];
     
+    // Blur Game
+    UIVisualEffect *blurEffect;
+    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    UIVisualEffectView *visualEffectView;
+    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    
+    visualEffectView.frame = self.gameContainer.bounds;
+    [self.gameContainer addSubview:visualEffectView];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
