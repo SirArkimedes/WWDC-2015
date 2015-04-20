@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-DY-stM">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-DY-stM">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="GAH-K5-exU" kind="embed" id="rXN-z3-W8W"/>
@@ -73,11 +73,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eaF-DY-stM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="08W-l9-oM2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Crb-50-tq5" secondAttribute="bottom" id="2VQ-UM-9cF"/>
                             <constraint firstItem="Crb-50-tq5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27" id="3SW-If-8MN"/>
                             <constraint firstItem="Crb-50-tq5" firstAttribute="top" secondItem="74h-z6-b4S" secondAttribute="bottom" constant="23" id="5Xl-49-GUO"/>
                             <constraint firstItem="Crb-50-tq5" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" constant="0.5" id="7ee-PO-tip"/>
+                            <constraint firstItem="eaF-DY-stM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AM9-DE-ehR"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="top" secondItem="I66-kV-4dX" secondAttribute="bottom" constant="20" id="BpQ-YJ-LKW"/>
+                            <constraint firstItem="eaF-DY-stM" firstAttribute="centerX" secondItem="Crb-50-tq5" secondAttribute="centerX" id="DTV-t1-Wzk"/>
+                            <constraint firstItem="eaF-DY-stM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iXn-vA-qE7"/>
                             <constraint firstItem="74h-z6-b4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mw7-cA-l90"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="sWP-qu-keg"/>
                             <constraint firstItem="I66-kV-4dX" firstAttribute="centerX" secondItem="74h-z6-b4S" secondAttribute="centerX" id="xkQ-DV-0bh"/>
@@ -118,12 +122,12 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="GAH-K5-exU" userLabel="Game View Controller" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zgU-Jb-TpT"/>
-                        <viewControllerLayoutGuide type="bottom" id="GoX-Rj-LuJ"/>
+                        <viewControllerLayoutGuide type="top" id="5PN-Hm-Z4k"/>
+                        <viewControllerLayoutGuide type="bottom" id="wHd-nM-cPi"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s1P-2R-MfD">
+                    <view key="view" contentMode="scaleToFill" id="X2E-Hl-d3s" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>

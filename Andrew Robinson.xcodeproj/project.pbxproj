@@ -22,6 +22,8 @@
 		4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D51DF011ADF53B200FD3DE9 /* Images.xcassets */; };
 		4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */; };
 		4D51DF111ADF53B200FD3DE9 /* Andrew_RobinsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DF101ADF53B200FD3DE9 /* Andrew_RobinsonTests.m */; };
+		4D9911161AE4793E0038B554 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D9911151AE4793E0038B554 /* GameScene.sks */; };
+		4D9911191AE479650038B554 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9911181AE479650038B554 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		4D51DF0A1ADF53B200FD3DE9 /* Andrew RobinsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Andrew RobinsonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DF0F1ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DF101ADF53B200FD3DE9 /* Andrew_RobinsonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Andrew_RobinsonTests.m; sourceTree = "<group>"; };
+		4D9911151AE4793E0038B554 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4D9911171AE479650038B554 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		4D9911181AE479650038B554 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 		4D51DEF01ADF53B200FD3DE9 /* Andrew Robinson */ = {
 			isa = PBXGroup;
 			children = (
+				4D9911141AE4790D0038B554 /* Game Background */,
 				4D13A66D1ADFF65E00979F32 /* Assets */,
 				4D51DEF51ADF53B200FD3DE9 /* AppDelegate.h */,
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
@@ -121,8 +127,6 @@
 				4D13A6731AE0009500979F32 /* AboutCell.h */,
 				4D13A6741AE0009500979F32 /* AboutCell.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
-				4D2242511AE337010078C062 /* GameViewController.h */,
-				4D2242521AE337010078C062 /* GameViewController.m */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
 				4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */,
@@ -155,6 +159,18 @@
 				4D51DF0F1ADF53B200FD3DE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D9911141AE4790D0038B554 /* Game Background */ = {
+			isa = PBXGroup;
+			children = (
+				4D2242511AE337010078C062 /* GameViewController.h */,
+				4D2242521AE337010078C062 /* GameViewController.m */,
+				4D9911151AE4793E0038B554 /* GameScene.sks */,
+				4D9911171AE479650038B554 /* GameScene.h */,
+				4D9911181AE479650038B554 /* GameScene.m */,
+			);
+			name = "Game Background";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +258,7 @@
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
 				4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */,
+				4D9911161AE4793E0038B554 /* GameScene.sks in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,
@@ -268,6 +285,7 @@
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
 				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
+				4D9911191AE479650038B554 /* GameScene.m in Sources */,
 				4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
