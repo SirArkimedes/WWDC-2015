@@ -69,8 +69,8 @@
     visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     
     visualEffectView.frame = self.view.bounds;
+    visualEffectView.frame = CGRectMake(0, 0, self.view.bounds.size.width*2, self.view.bounds.size.height*2);
     [self.gameContainer addSubview:visualEffectView];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -209,6 +209,7 @@
 
 - (void)setupConstraintsforLandscaoe {
     
+    // Begin constraint
     [self.view removeConstraint:self.topPosition];
     
 //    [self.view layoutIfNeeded];
