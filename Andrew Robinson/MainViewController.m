@@ -45,6 +45,9 @@
     Item *fourthItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Skills & Interests"];
     [self.items addObject:fourthItem];
     
+    Item *fiveItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Experience"];
+    [self.items addObject:fiveItem];
+    
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];
     
