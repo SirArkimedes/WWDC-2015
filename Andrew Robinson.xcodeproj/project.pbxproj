@@ -25,6 +25,7 @@
 		4D9911161AE4793E0038B554 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D9911151AE4793E0038B554 /* GameScene.sks */; };
 		4D9911191AE479650038B554 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9911181AE479650038B554 /* GameScene.m */; };
 		4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99111B1AE481FA0038B554 /* GameScene.swift */; };
+		4DF583371AE56A150070FAC5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF583361AE56A150070FAC5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		4D9911181AE479650038B554 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		4D99111A1AE481FA0038B554 /* Andrew Robinson-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Andrew Robinson-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D99111B1AE481FA0038B554 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4DF583351AE56A150070FAC5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		4DF583361AE56A150070FAC5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
 				4D13A6731AE0009500979F32 /* AboutCell.h */,
 				4D13A6741AE0009500979F32 /* AboutCell.m */,
+				4DF583351AE56A150070FAC5 /* DetailViewController.h */,
+				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
@@ -289,6 +294,7 @@
 				4D2242531AE337010078C062 /* GameViewController.m in Sources */,
 				4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
+				4DF583371AE56A150070FAC5 /* DetailViewController.m in Sources */,
 				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
 				4D9911191AE479650038B554 /* GameScene.m in Sources */,

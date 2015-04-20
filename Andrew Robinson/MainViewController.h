@@ -10,4 +10,6 @@
 
 @interface MainViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
 @end

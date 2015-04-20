@@ -105,16 +105,16 @@
                         <outlet property="imageOfSelf" destination="I66-kV-4dX" id="iWP-0P-fDa"/>
                         <outlet property="selfText" destination="74h-z6-b4S" id="XuO-W5-zbb"/>
                         <outlet property="topPosition" destination="BpQ-YJ-LKW" id="uOD-mf-QzD"/>
-                        <segue destination="YRt-DT-WR3" kind="presentation" identifier="testId" id="ecg-5x-vHu"/>
+                        <segue destination="pyX-BG-0YZ" kind="show" identifier="testId" id="ecg-5x-vHu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Detail-->
         <scene sceneID="S6r-1Y-LmF">
             <objects>
-                <viewController id="YRt-DT-WR3" sceneMemberID="viewController">
+                <viewController id="YRt-DT-WR3" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1uX-gx-rZX"/>
                         <viewControllerLayoutGuide type="bottom" id="oYf-g0-KMf"/>
@@ -122,12 +122,20 @@
                     <view key="view" contentMode="scaleToFill" id="asw-PD-bA5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail" id="XLz-8e-rQi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2kc-ET-jb6">
+                            <connections>
+                                <segue destination="t2K-Bz-MC2" kind="unwind" unwindAction="unwindToList:" id="Mht-om-o3l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEf-cw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="t2K-Bz-MC2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="251"/>
+            <point key="canvasLocation" x="2085" y="307"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="jgQ-58-f4D">
@@ -147,6 +155,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5h-Z4-m2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="-413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JBI-Sl-jk3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pyX-BG-0YZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nwd-jo-0OH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YRt-DT-WR3" kind="relationship" relationship="rootViewController" id="guC-dJ-pZV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09h-yT-nBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="307"/>
         </scene>
     </scenes>
     <resources>
