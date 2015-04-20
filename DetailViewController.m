@@ -24,14 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)unwindToList {
-    
-}
-
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    return YES;
-}
-
 /*
 #pragma mark - Navigation
 
