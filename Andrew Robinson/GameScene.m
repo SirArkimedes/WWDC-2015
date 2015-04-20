@@ -8,6 +8,12 @@
 
 #import "GameScene.h"
 
+@interface GameScene ()
+
+@property (strong, nonatomic) NSMutableArray *circles;
+
+@end
+
 @implementation GameScene
 
 - (void)didMoveToView:(SKView *)view {
