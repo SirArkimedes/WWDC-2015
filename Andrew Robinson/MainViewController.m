@@ -75,6 +75,9 @@
     visualEffectView.frame = self.view.bounds;
     visualEffectView.frame = CGRectMake(0, 0, self.view.bounds.size.width*2, self.view.bounds.size.height*2);
     [self.gameContainer addSubview:visualEffectView];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,6 +99,10 @@
         
     }
     
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {
