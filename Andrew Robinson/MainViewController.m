@@ -137,12 +137,23 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // If you need to use the touched cell, you can retrieve it like so
-    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+//    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     
-    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
+//    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
     
-    if (indexPath.row == 2) {
-        [self performSegueWithIdentifier:@"testId" sender:self];
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:@"aboutMeId" sender:self];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"educationId" sender:self];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"skillsAndInterestsId" sender:self];
+            break;
+        case 4:
+            [self performSegueWithIdentifier:@"experienceId" sender:self];
+            break;
     }
     
 }
