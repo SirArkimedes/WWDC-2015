@@ -22,13 +22,13 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        let minusSize : CGFloat = 40
+        let minusSize : CGFloat = 0
         
         // Set variables
-        kMaxLeft = CGFloat((3/4)*self.frame.size.width) + minusSize
-        kMaxRight = self.frame.size.width/4 - minusSize
-        kMaxBottom = self.frame.size.height/4 - minusSize
-        kMaxTop = CGFloat((3/4)*self.frame.size.height) + minusSize
+        kMaxLeft = CGFloat((5/6)*self.frame.size.width) + minusSize
+        kMaxRight = self.frame.size.width/6 - minusSize
+        kMaxBottom = self.frame.size.height/8 - minusSize
+        kMaxTop = CGFloat((7/8)*self.frame.size.height) + minusSize
         
         var circle = self.circle();
         
