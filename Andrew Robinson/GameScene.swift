@@ -22,14 +22,13 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        // Set variables
-        kMaxLeft = CGFloat((3/4)*self.frame.size.width)
-        kMaxRight = self.frame.size.width/4
-        kMaxBottom = self.frame.size.height/4
-        kMaxTop = CGFloat((3/4)*self.frame.size.height)
+        let minusSize : CGFloat = 40
         
-        print(kMaxLeft)
-        print(kMaxRight)
+        // Set variables
+        kMaxLeft = CGFloat((3/4)*self.frame.size.width) + minusSize
+        kMaxRight = self.frame.size.width/4 - minusSize
+        kMaxBottom = self.frame.size.height/4 - minusSize
+        kMaxTop = CGFloat((3/4)*self.frame.size.height) + minusSize
         
         var circle = self.circle();
         
@@ -49,12 +48,40 @@ class GameScene: SKScene {
     
     func circle() -> SKShapeNode {
         
-        var circle = SKShapeNode(circleOfRadius:50) // Size of Circle
+        var circleRadius : CGFloat
+        let randRadius : UInt32 = arc4random_uniform(3)
+        
+        var color : SKColor
+        let randColor : UInt32 = arc4random_uniform(3)
+        
+        switch randRadius {
+        case 0:
+            circleRadius = 50
+        case 1:
+            circleRadius = 30
+        case 2:
+            circleRadius = 20
+        default:
+            circleRadius = 10
+        }
+        
+        switch randColor {
+        case 0:
+            color = SKColor.blueColor()
+        case 1:
+            color = SKColor.purpleColor()
+        case 2:
+            color = SKColor.redColor()
+        default:
+            color = SKColor.blackColor()
+        }
+        
+        var circle = SKShapeNode(circleOfRadius:circleRadius) // Size of Circle
         circle.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2)
-        circle.physicsBody = SKPhysicsBody(circleOfRadius:50)
+        circle.physicsBody = SKPhysicsBody(circleOfRadius:circleRadius)
         circle.physicsBody!.dynamic = true
         circle.strokeColor = SKColor.clearColor()
-        circle.fillColor = SKColor.blueColor()
+        circle.fillColor = color
         
         return circle;
         
@@ -62,7 +89,7 @@ class GameScene: SKScene {
     
     func spawnMore() {
         
-        if circles.count < 5 {
+        if circles.count < 10 {
             
             delay(1) {
                 var circle = self.circle();
@@ -86,19 +113,19 @@ class GameScene: SKScene {
         for sprite : SKShapeNode in circles {
             
             if sprite.position.x > kMaxLeft {
-                sprite.physicsBody?.applyImpulse(CGVectorMake(-100, 0))
+                sprite.physicsBody?.applyImpulse(CGVectorMake(-30, 0))
             }
             
             if sprite.position.x < kMaxRight {
-                sprite.physicsBody?.applyImpulse(CGVectorMake(100, 0))
+                sprite.physicsBody?.applyImpulse(CGVectorMake(30, 0))
             }
             
             if sprite.position.y < kMaxBottom {
-                sprite.physicsBody?.applyImpulse(CGVectorMake(0, 100))
+                sprite.physicsBody?.applyImpulse(CGVectorMake(0, 30))
             }
             
             if sprite.position.y > kMaxTop {
-                sprite.physicsBody?.applyImpulse(CGVectorMake(0, -100))
+                sprite.physicsBody?.applyImpulse(CGVectorMake(0, -30))
             }
             
         }
