@@ -21,6 +21,8 @@
 
 @property (strong, nonatomic) NSMutableArray *items;
 
+@property BOOL shouldAnimate;
+
 @end
 
 @implementation MainViewController
@@ -28,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.shouldAnimate = YES;
     
     // Array readiness
     self.items = [[NSMutableArray alloc] init];
@@ -73,20 +77,24 @@
     [self.gameContainer addSubview:visualEffectView];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     
-    CGRect viewFrame = self.collectionView.frame;
-    viewFrame.origin.y = -viewFrame.size.height;
-    
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
-//    [UIView setAnimationDelay:1.0];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-    self.collectionView.frame = viewFrame;
-    
-    [UIView commitAnimations];
+    if (self.shouldAnimate) {
+        CGRect viewFrame = self.collectionView.frame;
+        viewFrame.origin.y = -viewFrame.size.height;
+        
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:1.0];
+//        [UIView setAnimationDelay:1.0];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+        
+        self.collectionView.frame = viewFrame;
+        
+        [UIView commitAnimations];
+        
+        self.shouldAnimate = NO;
+        
+    }
     
 }
 
