@@ -15,7 +15,21 @@ class GameScene: SKScene {
     
     var xVelocity: CGFloat = 0
     
+    var kMaxLeft : CGFloat = 0
+    var kMaxRight : CGFloat = 0
+    var kMaxBottom : CGFloat = 0
+    var kMaxTop : CGFloat = 0
+    
     override func didMoveToView(view: SKView) {
+        
+        // Set variables
+        kMaxLeft = CGFloat((3/4)*self.frame.size.width)
+        kMaxRight = self.frame.size.width/4
+        kMaxBottom = self.frame.size.height/4
+        kMaxTop = CGFloat((3/4)*self.frame.size.height)
+        
+        print(kMaxLeft)
+        print(kMaxRight)
         
         var circle = self.circle();
         
@@ -67,12 +81,28 @@ class GameScene: SKScene {
     // MARK: Update
     
     override func update(currentTime: CFTimeInterval) {
-//        let rate: CGFloat = 0.5; //Controls rate of motion. 1.0 instantaneous, 0.0 none.
-//        
-//        for sprite : SKShapeNode in circles {
-//            let relativeVelocity: CGVector = CGVector(dx:xVelocity-sprite.physicsBody!.velocity.dx, dy:0);
-//            sprite.physicsBody!.velocity=CGVector(dx:sprite.physicsBody!.velocity.dx+relativeVelocity.dx*rate, dy:0);
-//        }
+        
+        // Move!
+        for sprite : SKShapeNode in circles {
+            
+            if sprite.position.x > kMaxLeft {
+                sprite.physicsBody?.applyImpulse(CGVectorMake(-100, 0))
+            }
+            
+            if sprite.position.x < kMaxRight {
+                sprite.physicsBody?.applyImpulse(CGVectorMake(100, 0))
+            }
+            
+            if sprite.position.y < kMaxBottom {
+                sprite.physicsBody?.applyImpulse(CGVectorMake(0, 100))
+            }
+            
+            if sprite.position.y > kMaxTop {
+                sprite.physicsBody?.applyImpulse(CGVectorMake(0, -100))
+            }
+            
+        }
+        
     }
     
     // MARK: Delay
