@@ -25,6 +25,7 @@
 		4D9911161AE4793E0038B554 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D9911151AE4793E0038B554 /* GameScene.sks */; };
 		4D9911191AE479650038B554 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9911181AE479650038B554 /* GameScene.m */; };
 		4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99111B1AE481FA0038B554 /* GameScene.swift */; };
+		4DE522ED1AE5DFA400094627 /* xcode_hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE522EC1AE5DFA400094627 /* xcode_hammer.png */; };
 		4DF583371AE56A150070FAC5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF583361AE56A150070FAC5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		4D9911181AE479650038B554 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		4D99111A1AE481FA0038B554 /* Andrew Robinson-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Andrew Robinson-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D99111B1AE481FA0038B554 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4DE522EC1AE5DFA400094627 /* xcode_hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xcode_hammer.png; path = Assets/xcode_hammer.png; sourceTree = "<group>"; };
 		4DF583351AE56A150070FAC5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		4DF583361AE56A150070FAC5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 		4D13A66D1ADFF65E00979F32 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4DE522EC1AE5DFA400094627 /* xcode_hammer.png */,
 				4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */,
 				4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */,
 				4D13A67C1AE01FF200979F32 /* High School logo.png */,
@@ -272,6 +275,7 @@
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,
+				4DE522ED1AE5DFA400094627 /* xcode_hammer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
