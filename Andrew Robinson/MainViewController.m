@@ -36,7 +36,7 @@
     Item *firstItem = [[Item alloc] initWithImage:@"402-Faceit-SirArkimedesBukkitDev.png" withText:@"About Me"];
     [self.items addObject:firstItem];
     
-    Item *secondItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Projects"];
+    Item *secondItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Projects"];
     [self.items addObject:secondItem];
     
     Item *thirdItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Education"];
