@@ -36,6 +36,9 @@ class GameScene: SKScene {
         circle.physicsBody?.applyForce(CGVectorMake(50, 50))
         circles.append(circle)
         
+        // Fade it in
+        circle.runAction(SKAction.fadeAlphaTo(1, duration: 1.5))
+        
         // Create the loop
         self.spawnMore();
         
@@ -82,6 +85,7 @@ class GameScene: SKScene {
         circle.physicsBody!.dynamic = true
         circle.strokeColor = SKColor.clearColor()
         circle.fillColor = color
+        circle.alpha = 0
         
         return circle;
         
@@ -97,6 +101,9 @@ class GameScene: SKScene {
                 self.addChild(circle)
                 circle.physicsBody?.applyForce(CGVectorMake(-500, -500))
                 self.circles.append(circle)
+                
+                // Fade it in
+                circle.runAction(SKAction.fadeAlphaTo(1, duration: 1.5))
                 
                 self.spawnMore();
             }
