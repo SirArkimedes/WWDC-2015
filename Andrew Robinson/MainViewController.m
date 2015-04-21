@@ -37,20 +37,20 @@
     self.items = [[NSMutableArray alloc] init];
     
     // Add items to array - The order of these matter in where the item is placed.
+    Item *secondItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Projects"];
+    [self.items addObject:secondItem];
+    
     Item *firstItem = [[Item alloc] initWithImage:@"402-Faceit-SirArkimedesBukkitDev.png" withText:@"About Me"];
     [self.items addObject:firstItem];
     
-    Item *secondItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Projects"];
-    [self.items addObject:secondItem];
+    Item *fiveItem = [[Item alloc] initWithImage:@"xcode_hammer.png" withText:@"Experience"];
+    [self.items addObject:fiveItem];
     
     Item *thirdItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Education"];
     [self.items addObject:thirdItem];
     
     Item *fourthItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Skills & Interests"];
     [self.items addObject:fourthItem];
-    
-    Item *fiveItem = [[Item alloc] initWithImage:@"xcode_hammer.png" withText:@"Experience"];
-    [self.items addObject:fiveItem];
     
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];
@@ -143,16 +143,19 @@
     
     switch (indexPath.row) {
         case 0:
+            // Do something
+            break;
+        case 1:
             [self performSegueWithIdentifier:@"aboutMeId" sender:self];
             break;
         case 2:
-            [self performSegueWithIdentifier:@"educationId" sender:self];
+            [self performSegueWithIdentifier:@"experienceId" sender:self];
             break;
         case 3:
-            [self performSegueWithIdentifier:@"skillsAndInterestsId" sender:self];
+            [self performSegueWithIdentifier:@"educationId" sender:self];
             break;
         case 4:
-            [self performSegueWithIdentifier:@"experienceId" sender:self];
+            [self performSegueWithIdentifier:@"skillsAndInterestsId" sender:self];
             break;
     }
     
