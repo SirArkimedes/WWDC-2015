@@ -10,6 +10,8 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *eduScroll;
+
 @end
 
 @implementation DetailViewController
@@ -19,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    self.eduScroll.contentSize = CGSizeMake(320, 800);
+    
 }
 
 - (void)didReceiveMemoryWarning {
