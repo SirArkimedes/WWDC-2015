@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProjectsViewController : UIViewController
+@interface ProjectsViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end

@@ -61,6 +61,7 @@
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];
     
+    // Collection view
     UINib *cellNib = [UINib nibWithNibName:@"AboutCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"aboutCell"];
     
@@ -271,6 +272,7 @@
     
 //    NSLog(@"End: %@", NSStringFromCGRect(self.backButton.frame));
     
+    // Put button back to og position
     self.backButton.frame = CGRectMake(16, 26, 50, 30);
     
     CGRect viewFrame = self.collectionView.frame;
