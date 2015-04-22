@@ -185,8 +185,8 @@
 
 - (void)animateHideMainView {
     
-    NSLog(self.backButton.hidden ? @"Yes" : @"No");
-    NSLog(@"Initial: %@", NSStringFromCGRect(self.backButton.frame));
+//    NSLog(self.backButton.hidden ? @"Yes" : @"No");
+//    NSLog(@"Initial: %@", NSStringFromCGRect(self.backButton.frame));
     
     CGRect viewFrame = self.collectionView.frame;
     viewFrame.origin.y = self.view.frame.size.height;
@@ -269,9 +269,9 @@
     self.backButton.hidden = YES;
     self.projectsContainer.hidden = YES;
     
-    NSLog(@"End: %@", NSStringFromCGRect(self.backButton.frame));
+//    NSLog(@"End: %@", NSStringFromCGRect(self.backButton.frame));
     
-    self.backButton.frame = CGRectMake(16, 26, 50, 30);
+    self.backButton.frame = CGRectMake(16, 16, 50, 30);
     
     CGRect viewFrame = self.collectionView.frame;
     viewFrame.origin.y = self.view.frame.size.height - self.collectionView.frame.size.height;
