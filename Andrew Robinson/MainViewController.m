@@ -185,6 +185,9 @@
 
 - (void)animateHideMainView {
     
+    NSLog(self.backButton.hidden ? @"Yes" : @"No");
+    NSLog(@"Initial: %@", NSStringFromCGRect(self.backButton.frame));
+    
     CGRect viewFrame = self.collectionView.frame;
     viewFrame.origin.y = self.view.frame.size.height;
     
@@ -220,7 +223,7 @@
     self.projectsContainer.frame = viewFrame;
     
     CGRect buttonViewFrame = self.backButton.frame;
-    buttonViewFrame.origin.y = -viewFrame.size.height;
+    buttonViewFrame.origin.y = -buttonViewFrame.size.height;
     self.backButton.frame = buttonViewFrame;
     
     // Animate
@@ -236,18 +239,15 @@
     
 }
 
+// BACK BUTTON TAP
 - (IBAction)backTapped:(id)sender {
-    
-    // Unhide
-    self.projectsContainer.hidden = NO;
-    self.backButton.hidden = NO;
     
     // New positions
     CGRect viewFrame = self.view.frame;
     viewFrame.origin.y = -viewFrame.size.height;
     
     CGRect buttonViewFrame = self.backButton.frame;
-    buttonViewFrame.origin.y = -viewFrame.size.height;
+    buttonViewFrame.origin.y = -buttonViewFrame.size.height;
     
     // Animate
     [UIView beginAnimations:nil context:nil];
@@ -265,6 +265,13 @@
 }
 
 - (void)originalMainView {
+    
+    self.backButton.hidden = YES;
+    self.projectsContainer.hidden = YES;
+    
+    NSLog(@"End: %@", NSStringFromCGRect(self.backButton.frame));
+    
+    self.backButton.frame = CGRectMake(16, 26, 50, 30);
     
     CGRect viewFrame = self.collectionView.frame;
     viewFrame.origin.y = self.view.frame.size.height - self.collectionView.frame.size.height;
