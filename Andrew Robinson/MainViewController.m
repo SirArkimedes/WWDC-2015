@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *gameContainer;
 @property (weak, nonatomic) IBOutlet UIView *projectsContainer;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPosition;
 
@@ -36,6 +37,7 @@
     
     // Hide to prepare for Projects cell tap
     self.projectsContainer.hidden = YES;
+    self.backButton.hidden = YES;
     
     // Array readiness
     self.items = [[NSMutableArray alloc] init];
@@ -204,34 +206,79 @@
 
 - (void)animateShowProjectsView {
     
+    // Unhide
     self.projectsContainer.hidden = NO;
-//    self.projectsContainer.frame = self.view.frame;
+    self.backButton.hidden = NO;
     
-//    CGRect viewFrame = self.view.frame;
-//    viewFrame.origin.y = -viewFrame.size.height;
-//    
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:1.0];
-//    //        [UIView setAnimationDelay:1.0];
-//    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-//    
-//    self.projectsContainer.frame = viewFrame;
-//    
-//    [UIView commitAnimations];
-    
+    // OG positions
     CGRect ogFrame = self.view.frame;
+    CGRect backFrame = self.backButton.frame;
     
+    // New positions
     CGRect viewFrame = self.view.frame;
     viewFrame.origin.y = -viewFrame.size.height;
     self.projectsContainer.frame = viewFrame;
     
+    CGRect buttonViewFrame = self.backButton.frame;
+    buttonViewFrame.origin.y = -viewFrame.size.height;
+    self.backButton.frame = buttonViewFrame;
+    
+    // Animate
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:1.0];
     //        [UIView setAnimationDelay:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
     
     self.projectsContainer.frame = ogFrame;
+    self.backButton.frame = backFrame;
 
+    [UIView commitAnimations];
+    
+}
+
+- (IBAction)backTapped:(id)sender {
+    
+    // Unhide
+    self.projectsContainer.hidden = NO;
+    self.backButton.hidden = NO;
+    
+    // New positions
+    CGRect viewFrame = self.view.frame;
+    viewFrame.origin.y = -viewFrame.size.height;
+    
+    CGRect buttonViewFrame = self.backButton.frame;
+    buttonViewFrame.origin.y = -viewFrame.size.height;
+    
+    // Animate
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    //        [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    
+    self.projectsContainer.frame = viewFrame;
+    self.backButton.frame = buttonViewFrame;
+    
+    [UIView commitAnimations];
+    
+    [self performSelector:@selector(originalMainView) withObject:nil afterDelay:1.0];
+    
+}
+
+- (void)originalMainView {
+    
+    CGRect viewFrame = self.collectionView.frame;
+    viewFrame.origin.y = self.view.frame.size.height - self.collectionView.frame.size.height;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    //        [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    self.collectionView.frame = viewFrame;
+    
+    self.imageOfSelf.alpha = 1;
+    self.selfText.alpha = 1;
+    
     [UIView commitAnimations];
     
 }
