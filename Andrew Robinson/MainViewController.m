@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *selfText;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *gameContainer;
+@property (weak, nonatomic) IBOutlet UIView *projectsContainer;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPosition;
 
@@ -32,6 +33,9 @@
     // Do any additional setup after loading the view.
     
     self.shouldAnimate = YES;
+    
+    // Hide to prepare for Projects cell tap
+    self.projectsContainer.hidden = YES;
     
     // Array readiness
     self.items = [[NSMutableArray alloc] init];
@@ -192,6 +196,42 @@
     self.imageOfSelf.alpha = 0;
     self.selfText.alpha = 0;
     
+    [UIView commitAnimations];
+    
+    [self performSelector:@selector(animateShowProjectsView) withObject:nil afterDelay:1.0];
+    
+}
+
+- (void)animateShowProjectsView {
+    
+    self.projectsContainer.hidden = NO;
+//    self.projectsContainer.frame = self.view.frame;
+    
+//    CGRect viewFrame = self.view.frame;
+//    viewFrame.origin.y = -viewFrame.size.height;
+//    
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:1.0];
+//    //        [UIView setAnimationDelay:1.0];
+//    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+//    
+//    self.projectsContainer.frame = viewFrame;
+//    
+//    [UIView commitAnimations];
+    
+    CGRect ogFrame = self.view.frame;
+    
+    CGRect viewFrame = self.view.frame;
+    viewFrame.origin.y = -viewFrame.size.height;
+    self.projectsContainer.frame = viewFrame;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    //        [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    self.projectsContainer.frame = ogFrame;
+
     [UIView commitAnimations];
     
 }

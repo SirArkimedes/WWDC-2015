@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,10 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-DY-stM">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-DY-stM" userLabel="Game Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="GAH-K5-exU" kind="embed" id="NDT-Uz-uE9"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLU-M7-1Mv" userLabel="Projects Container View">
+                                <rect key="frame" x="1" y="0.0" width="599" height="600"/>
+                                <connections>
+                                    <segue destination="7dC-ie-8yU" kind="embed" id="0Lo-qF-wjg"/>
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="402-Faceit-SirArkimedesBukkitDev.png" translatesAutoresizingMaskIntoConstraints="NO" id="I66-kV-4dX">
@@ -103,6 +109,7 @@
                         <outlet property="collectionView" destination="Crb-50-tq5" id="uEP-Gf-BzM"/>
                         <outlet property="gameContainer" destination="eaF-DY-stM" id="Xhb-ar-1QZ"/>
                         <outlet property="imageOfSelf" destination="I66-kV-4dX" id="iWP-0P-fDa"/>
+                        <outlet property="projectsContainer" destination="hLU-M7-1Mv" id="kK9-Dm-Teq"/>
                         <outlet property="selfText" destination="74h-z6-b4S" id="XuO-W5-zbb"/>
                         <outlet property="topPosition" destination="BpQ-YJ-LKW" id="uOD-mf-QzD"/>
                         <segue destination="YRt-DT-WR3" kind="show" identifier="educationId" id="69w-fW-4cc"/>
@@ -385,6 +392,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5h-Z4-m2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="654" y="286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WUQ-5i-81o">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7dC-ie-8yU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iuu-r5-Bf1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hx6-29-dlW"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zml-Kr-siz">
+                        <rect key="frame" x="0.0" y="0.0" width="599" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-74-ohf">
+                                <rect key="frame" x="248" y="289" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="zml-Kr-siz" secondAttribute="centerX" id="h48-Z6-vPf"/>
+                            <constraint firstItem="rW6-74-ohf" firstAttribute="top" secondItem="iuu-r5-Bf1" secondAttribute="bottom" constant="289" id="uqu-VZ-s8K"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbf-5Z-3Tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.5" y="978"/>
         </scene>
     </scenes>
     <resources>
