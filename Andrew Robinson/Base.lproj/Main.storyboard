@@ -418,10 +418,10 @@
             </objects>
             <point key="canvasLocation" x="654" y="286"/>
         </scene>
-        <!--View Controller-->
+        <!--Projects View Controller-->
         <scene sceneID="WUQ-5i-81o">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7dC-ie-8yU" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7dC-ie-8yU" userLabel="Projects View Controller" customClass="ProjectsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iuu-r5-Bf1"/>
                         <viewControllerLayoutGuide type="bottom" id="Hx6-29-dlW"/>
@@ -437,7 +437,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="zml-Kr-siz" secondAttribute="centerX" id="OmF-wA-ode"/>
                             <constraint firstItem="rW6-74-ohf" firstAttribute="top" secondItem="iuu-r5-Bf1" secondAttribute="bottom" constant="289" id="eMp-Cs-JU5"/>
@@ -448,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbf-5Z-3Tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50.5" y="978"/>
+            <point key="canvasLocation" x="654" y="2003"/>
         </scene>
     </scenes>
     <resources>

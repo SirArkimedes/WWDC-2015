@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
 		4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A66E1ADFF86200979F32 /* AboutCell.xib */; };
 		4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6711ADFF98C00979F32 /* MainViewController.m */; };
 		4D13A6751AE0009500979F32 /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6741AE0009500979F32 /* AboutCell.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 		4D13A66E1ADFF86200979F32 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		4D13A6701ADFF98C00979F32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4D13A6711ADFF98C00979F32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -94,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0FE4721AE7DFD3005B46DD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DF583351AE56A150070FAC5 /* DetailViewController.h */,
+				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
+				4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */,
+				4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4D13A66D1ADFF65E00979F32 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,7 @@
 		4D51DEF01ADF53B200FD3DE9 /* Andrew Robinson */ = {
 			isa = PBXGroup;
 			children = (
+				4D0FE4721AE7DFD3005B46DD /* ViewControllers */,
 				4D9911141AE4790D0038B554 /* Game Background */,
 				4D13A66D1ADFF65E00979F32 /* Assets */,
 				4D51DEF51ADF53B200FD3DE9 /* AppDelegate.h */,
@@ -138,8 +153,6 @@
 				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
 				4D13A6731AE0009500979F32 /* AboutCell.h */,
 				4D13A6741AE0009500979F32 /* AboutCell.m */,
-				4DF583351AE56A150070FAC5 /* DetailViewController.h */,
-				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
@@ -299,6 +312,7 @@
 			files = (
 				4D21568C1AE09B190059EA08 /* Item.m in Sources */,
 				4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */,
+				4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */,
 				4D2242531AE337010078C062 /* GameViewController.m in Sources */,
 				4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
