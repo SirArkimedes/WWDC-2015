@@ -30,8 +30,17 @@
     self.projectItems = [[NSMutableArray alloc] init];
     
     // Add items to array - The order of these matter in where the item is placed.
-    Item *secondItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Delivery Co."];
+    Item *firstItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Delivery Co."];
+    [self.projectItems addObject:firstItem];
+    
+    Item *secondItem = [[Item alloc] initWithImage:@"blankicon.png" withText:@"SkillsUSA Meetings"];
     [self.projectItems addObject:secondItem];
+    
+    Item *thirdItem = [[Item alloc] initWithImage:@"gpacal.png" withText:@"GPA Cal"];
+    [self.projectItems addObject:thirdItem];
+    
+//    Item *fourthItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"andrewrobinson.org"];
+//    [self.projectItems addObject:fourthItem];
     
     // Set clear color to collection view for no background.
     self.collectionView.backgroundColor = [UIColor clearColor];

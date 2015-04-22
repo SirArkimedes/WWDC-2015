@@ -430,14 +430,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-74-ohf">
-                                <rect key="frame" x="249" y="255" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-Pt-ZJ9">
-                                <rect key="frame" x="16" y="289" width="568" height="311"/>
+                                <rect key="frame" x="16" y="74" width="568" height="526"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="toL-Dv-pPW">
                                     <size key="itemSize" width="50" height="50"/>
@@ -461,15 +455,25 @@
                                     <outlet property="delegate" destination="7dC-ie-8yU" id="RUa-1j-ajy"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-74-ohf">
+                                <rect key="frame" x="249" y="20" width="102" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3XR-Sf-bDe"/>
+                                    <constraint firstAttribute="width" constant="102" id="Xab-d7-jcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="zml-Kr-siz" secondAttribute="centerX" id="KMk-oP-bMm"/>
+                            <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="CYo-Pt-ZJ9" secondAttribute="centerX" id="7ss-SL-oBD"/>
+                            <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="zml-Kr-siz" secondAttribute="centerX" id="PCL-qL-EAA"/>
                             <constraint firstItem="CYo-Pt-ZJ9" firstAttribute="bottom" secondItem="Hx6-29-dlW" secondAttribute="top" id="QsB-fe-wkz"/>
                             <constraint firstItem="CYo-Pt-ZJ9" firstAttribute="leading" secondItem="zml-Kr-siz" secondAttribute="leadingMargin" id="RGJ-MK-RJ7"/>
-                            <constraint firstItem="rW6-74-ohf" firstAttribute="centerX" secondItem="CYo-Pt-ZJ9" secondAttribute="centerX" id="lRB-Tl-dL7"/>
-                            <constraint firstItem="CYo-Pt-ZJ9" firstAttribute="top" secondItem="rW6-74-ohf" secondAttribute="bottom" constant="13" id="sA4-LH-ZEh"/>
-                            <constraint firstItem="rW6-74-ohf" firstAttribute="top" secondItem="iuu-r5-Bf1" secondAttribute="bottom" constant="255" id="u6Z-zD-kLA"/>
+                            <constraint firstItem="CYo-Pt-ZJ9" firstAttribute="top" secondItem="rW6-74-ohf" secondAttribute="bottom" constant="20" id="WKg-K2-pPK"/>
+                            <constraint firstItem="rW6-74-ohf" firstAttribute="top" secondItem="iuu-r5-Bf1" secondAttribute="bottom" constant="20" id="YnA-n1-Q1N"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

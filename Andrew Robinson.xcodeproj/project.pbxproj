@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
+		4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4731AE7ECD2005B46DD /* gpacal.png */; };
+		4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4841AE7ED76005B46DD /* blankicon.png */; };
 		4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A66E1ADFF86200979F32 /* AboutCell.xib */; };
 		4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6711ADFF98C00979F32 /* MainViewController.m */; };
 		4D13A6751AE0009500979F32 /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6741AE0009500979F32 /* AboutCell.m */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		4D0FE4731AE7ECD2005B46DD /* gpacal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gpacal.png; path = Assets/gpacal.png; sourceTree = "<group>"; };
+		4D0FE4841AE7ED76005B46DD /* blankicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blankicon.png; path = Assets/blankicon.png; sourceTree = "<group>"; };
 		4D13A66E1ADFF86200979F32 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		4D13A6701ADFF98C00979F32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4D13A6711ADFF98C00979F32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		4D13A66D1ADFF65E00979F32 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4D0FE4841AE7ED76005B46DD /* blankicon.png */,
+				4D0FE4731AE7ECD2005B46DD /* gpacal.png */,
 				4DE522EE1AE5E38800094627 /* deliverycoicon.png */,
 				4DE522EC1AE5DFA400094627 /* xcode_hammer.png */,
 				4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */,
@@ -285,8 +291,10 @@
 			files = (
 				4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */,
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
+				4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */,
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
 				4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */,
+				4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */,
 				4D9911161AE4793E0038B554 /* GameScene.sks in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
