@@ -83,6 +83,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     if (self.shouldAnimate) {
+        self.imageOfSelf.alpha = 0;
+        self.selfText.alpha = 0;
+        
         CGRect viewFrame = self.collectionView.frame;
         viewFrame.origin.y = -viewFrame.size.height;
         
@@ -92,6 +95,9 @@
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         
         self.collectionView.frame = viewFrame;
+        
+        self.imageOfSelf.alpha = 1;
+        self.selfText.alpha = 1;
         
         [UIView commitAnimations];
         
@@ -151,6 +157,7 @@
     switch (indexPath.row) {
         case 0:
             // Do something
+            [self animateHideMainView];
             break;
         case 1:
             [self performSegueWithIdentifier:@"aboutMeId" sender:self];
@@ -165,6 +172,27 @@
             [self performSegueWithIdentifier:@"skillsAndInterestsId" sender:self];
             break;
     }
+    
+}
+
+#pragma mark - Projects methods
+
+- (void)animateHideMainView {
+    
+    CGRect viewFrame = self.collectionView.frame;
+    viewFrame.origin.y = self.view.frame.size.height;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    //        [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    
+    self.collectionView.frame = viewFrame;
+    
+    self.imageOfSelf.alpha = 0;
+    self.selfText.alpha = 0;
+    
+    [UIView commitAnimations];
     
 }
 
