@@ -11,6 +11,8 @@
 #import "Item.h"
 #import "DetailViewController.h"
 
+#define kAnimation .5f
+
 @interface MainViewController ()
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageOfSelf;
@@ -98,7 +100,7 @@
         viewFrame.origin.y = -viewFrame.size.height;
         
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:1.0];
+        [UIView setAnimationDuration:kAnimation];
 //        [UIView setAnimationDelay:1.0];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         
@@ -200,7 +202,7 @@
     viewFrame.origin.y = self.view.frame.size.height;
     
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationDuration:kAnimation];
     //        [UIView setAnimationDelay:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     
@@ -211,7 +213,7 @@
     
     [UIView commitAnimations];
     
-    [self performSelector:@selector(animateShowProjectsView) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(animateShowProjectsView) withObject:nil afterDelay:kAnimation];
     
 }
 
@@ -236,7 +238,7 @@
     
     // Animate
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationDuration:kAnimation];
     //        [UIView setAnimationDelay:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
     
@@ -259,7 +261,7 @@
     
     // Animate
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationDuration:kAnimation];
     //        [UIView setAnimationDelay:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     
@@ -268,7 +270,7 @@
     
     [UIView commitAnimations];
     
-    [self performSelector:@selector(originalMainView) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(originalMainView) withObject:nil afterDelay:.5];
     
 }
 
@@ -286,7 +288,7 @@
     viewFrame.origin.y = self.view.frame.size.height - self.collectionView.frame.size.height;
     
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationDuration:kAnimation];
     //        [UIView setAnimationDelay:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
     
