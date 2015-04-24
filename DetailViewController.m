@@ -10,8 +10,8 @@
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UILabel *detailLabel;
 
 @end
 
@@ -23,11 +23,11 @@
     
     [self setNeedsStatusBarAppearanceUpdate];
     
-    UIScrollView *content = [[[NSBundle mainBundle] loadNibNamed:@"Education Scroll" owner:self options:nil] objectAtIndex:0];
-    content.frame = CGRectMake(0, 0, self.view.frame.size.width - 32, content.frame.size.height);
-    content.backgroundColor = [UIColor clearColor];
-    [self.scrollView addSubview:content];
-    self.scrollView.contentSize = content.frame.size;
+//    UIView *content = [[[NSBundle mainBundle] loadNibNamed:@"Education Scroll" owner:self options:nil] objectAtIndex:0];
+//    content.frame = CGRectMake(0, 0, self.view.frame.size.width - 32, content.frame.size.height);
+//    content.backgroundColor = [UIColor clearColor];
+//    [self.scrollView addSubview:content];
+//    self.scrollView.contentSize = content.frame.size;
     
 }
 
@@ -38,6 +38,24 @@
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
+}
+
+#pragma mark - Setup methods
+
+- (DetailViewController*)setupDetailwithTitle:(NSString*)title withNib:(NSString*)nib {
+    
+    // Set scrollView content
+    UIView *content = [[[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil] objectAtIndex:0];
+    content.frame = CGRectMake(0, 0, self.view.frame.size.width - 32, content.frame.size.height);
+    content.backgroundColor = [UIColor clearColor];
+    [self.scrollView addSubview:content];
+    self.scrollView.contentSize = content.frame.size;
+    
+    // Set label text
+    self.detailLabel.text = title;
+    
+    return self;
+    
 }
 
 /*

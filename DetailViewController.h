@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+- (DetailViewController*)setupDetailwithTitle:(NSString*)title withNib:(NSString*)nib;
+
 @end

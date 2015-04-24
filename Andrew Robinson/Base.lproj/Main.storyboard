@@ -138,9 +138,6 @@
                         <outlet property="selfText" destination="74h-z6-b4S" id="XuO-W5-zbb"/>
                         <outlet property="topPosition" destination="BpQ-YJ-LKW" id="uOD-mf-QzD"/>
                         <segue destination="YRt-DT-WR3" kind="show" identifier="educationId" id="69w-fW-4cc"/>
-                        <segue destination="GIW-rK-vAw" kind="show" identifier="aboutMeId" id="Wdt-jb-jWJ"/>
-                        <segue destination="hJ5-3V-6Pp" kind="show" identifier="skillsAndInterestsId" id="YHJ-Ws-v3v"/>
-                        <segue destination="W8t-VA-sOP" kind="show" identifier="experienceId" id="OJC-ct-ZLn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -150,7 +147,7 @@
         <!--Education Detail-->
         <scene sceneID="S6r-1Y-LmF">
             <objects>
-                <viewController id="YRt-DT-WR3" userLabel="Education Detail" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailViewController" id="YRt-DT-WR3" userLabel="Education Detail" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1uX-gx-rZX"/>
                         <viewControllerLayoutGuide type="bottom" id="oYf-g0-KMf"/>
@@ -180,9 +177,9 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-zr-M6Z">
-                                            <rect key="frame" x="237" y="30" width="126" height="21"/>
+                                            <rect key="frame" x="112" y="30" width="376" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="126" id="VLy-B8-5Pl"/>
+                                                <constraint firstAttribute="width" constant="376" id="VLy-B8-5Pl"/>
                                                 <constraint firstAttribute="height" constant="21" id="j9C-ct-yHl"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
@@ -232,195 +229,6 @@
                 <exit id="t2K-Bz-MC2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1431" y="978"/>
-        </scene>
-        <!--Skills & Interests Detail-->
-        <scene sceneID="MlY-bB-yeB">
-            <objects>
-                <viewController id="hJ5-3V-6Pp" userLabel="Skills &amp; Interests Detail" customClass="DetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u94-jc-rRm"/>
-                        <viewControllerLayoutGuide type="bottom" id="1Ap-0R-43g"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="syE-Zy-KLc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHw-DH-Te7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jR3-4k-Tiy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-zA-yil">
-                                            <rect key="frame" x="16" y="26" width="50" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="ehX-mP-aLF"/>
-                                                <constraint firstAttribute="height" constant="30" id="ui3-cL-8LC"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                            <state key="normal" title="Back">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="T5v-aa-lRJ" kind="unwind" unwindAction="unwindToList:" id="8f3-kB-FkV"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="l3e-zA-yil" firstAttribute="leading" secondItem="jR3-4k-Tiy" secondAttribute="leading" constant="16" id="7FO-UO-dsl"/>
-                                        <constraint firstItem="l3e-zA-yil" firstAttribute="top" secondItem="jR3-4k-Tiy" secondAttribute="top" constant="26" id="cu0-05-PWk"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vHw-DH-Te7" firstAttribute="top" secondItem="syE-Zy-KLc" secondAttribute="top" id="8oX-dM-Amt"/>
-                            <constraint firstItem="vHw-DH-Te7" firstAttribute="bottom" secondItem="1Ap-0R-43g" secondAttribute="top" id="SsJ-0y-nJH"/>
-                            <constraint firstItem="vHw-DH-Te7" firstAttribute="leading" secondItem="syE-Zy-KLc" secondAttribute="leading" id="rAo-j3-c0q"/>
-                            <constraint firstAttribute="trailing" secondItem="vHw-DH-Te7" secondAttribute="trailing" id="uec-tD-BiB"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Detail" id="zGX-4J-jyG">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bOc-Ig-tgX">
-                            <connections>
-                                <segue destination="T5v-aa-lRJ" kind="unwind" unwindAction="unwindToList:" id="4So-iq-JGJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X2q-jF-JRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="T5v-aa-lRJ" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1431" y="1724"/>
-        </scene>
-        <!--Experience Detail-->
-        <scene sceneID="d3y-0C-rp9">
-            <objects>
-                <viewController id="W8t-VA-sOP" userLabel="Experience Detail" customClass="DetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aEf-Yg-YqU"/>
-                        <viewControllerLayoutGuide type="bottom" id="fQD-W7-CPb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GOD-l3-jbc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvK-ZQ-12T">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xec-mj-wYg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2se-ev-bjW">
-                                            <rect key="frame" x="16" y="26" width="50" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="AuN-yg-qoP"/>
-                                                <constraint firstAttribute="height" constant="30" id="jhL-d6-0t3"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                            <state key="normal" title="Back">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="SJn-IO-MSF" kind="unwind" unwindAction="unwindToList:" id="pvw-Pc-cPr"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="2se-ev-bjW" firstAttribute="top" secondItem="Xec-mj-wYg" secondAttribute="top" constant="26" id="S15-Or-GCC"/>
-                                        <constraint firstItem="2se-ev-bjW" firstAttribute="leading" secondItem="Xec-mj-wYg" secondAttribute="leading" constant="16" id="jef-zI-AGw"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="QvK-ZQ-12T" secondAttribute="trailing" id="0tD-jL-Y5K"/>
-                            <constraint firstItem="QvK-ZQ-12T" firstAttribute="top" secondItem="GOD-l3-jbc" secondAttribute="top" id="Br9-co-HiB"/>
-                            <constraint firstItem="QvK-ZQ-12T" firstAttribute="bottom" secondItem="fQD-W7-CPb" secondAttribute="top" id="y6x-Ng-C9m"/>
-                            <constraint firstItem="QvK-ZQ-12T" firstAttribute="leading" secondItem="GOD-l3-jbc" secondAttribute="leading" id="zBN-F8-7l2"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Detail" id="oTc-nj-9BY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="C9c-ZW-c1E">
-                            <connections>
-                                <segue destination="SJn-IO-MSF" kind="unwind" unwindAction="unwindToList:" id="ZlA-um-g9Q"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N0w-DG-yHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="SJn-IO-MSF" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1431" y="2396"/>
-        </scene>
-        <!--About Me Detail-->
-        <scene sceneID="s0e-i9-5Vi">
-            <objects>
-                <viewController id="GIW-rK-vAw" userLabel="About Me Detail" customClass="DetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YtE-dL-yYh"/>
-                        <viewControllerLayoutGuide type="bottom" id="m9x-Zh-YFY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dXr-wQ-XX3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBb-17-DNO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KfD-Cz-CLc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meu-2U-PBW">
-                                            <rect key="frame" x="16" y="26" width="50" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="1rX-M2-Qmc"/>
-                                                <constraint firstAttribute="width" constant="50" id="uMz-WV-fKl"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                            <state key="normal" title="Back">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="Pms-5J-VOa" kind="unwind" unwindAction="unwindToList:" id="yBJ-vb-f8v"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="meu-2U-PBW" firstAttribute="leading" secondItem="KfD-Cz-CLc" secondAttribute="leading" constant="16" id="NTk-so-RQi"/>
-                                        <constraint firstItem="meu-2U-PBW" firstAttribute="top" secondItem="KfD-Cz-CLc" secondAttribute="top" constant="26" id="UEE-Kl-b9b"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mBb-17-DNO" firstAttribute="bottom" secondItem="m9x-Zh-YFY" secondAttribute="top" id="8I7-qN-4n7"/>
-                            <constraint firstItem="mBb-17-DNO" firstAttribute="top" secondItem="dXr-wQ-XX3" secondAttribute="top" id="RUK-Gg-MUo"/>
-                            <constraint firstAttribute="trailing" secondItem="mBb-17-DNO" secondAttribute="trailing" id="YV9-Py-sLP"/>
-                            <constraint firstItem="mBb-17-DNO" firstAttribute="leading" secondItem="dXr-wQ-XX3" secondAttribute="leading" id="fXn-Fe-bot"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Detail" id="3yE-LX-UKD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JEK-Tf-a11">
-                            <connections>
-                                <segue destination="Pms-5J-VOa" kind="unwind" unwindAction="unwindToList:" id="p3x-Co-KwL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v0r-3b-DfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Pms-5J-VOa" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1431" y="286"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="jgQ-58-f4D">
@@ -506,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbf-5Z-3Tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="2003"/>
+            <point key="canvasLocation" x="654" y="1772"/>
         </scene>
     </scenes>
     <resources>
