@@ -13,32 +13,62 @@
 @property (strong, nonatomic) MPMoviePlayerController *videoController;
 @property (weak, nonatomic) IBOutlet UIView *videoView;
 
+@property (weak, nonatomic) IBOutlet UIView *videoViewSkills;
+
+@property (weak, nonatomic) IBOutlet UIView *videoViewDelivery;
+
 @end
 
 @implementation ProjectsScrollContent
 
 - (void)didMoveToSuperview {
     
-    [self performSelector:@selector(movieView) withObject:nil afterDelay:.5];
+    if (self.videoView) {
+        [self performSelector:@selector(movieViewWithPath:) withObject:@"GPA Cal Video" afterDelay:.5];
+    } else if (self.videoViewSkills) {
+        [self performSelector:@selector(movieViewWithPath:) withObject:@"SillsUSA Meetings Video" afterDelay:.5];
+    } else if (self.videoViewDelivery) {
+        [self performSelector:@selector(movieViewWithPath:) withObject:@"SillsUSA Meetings Video" afterDelay:.5];
+    }
     
 }
 
 - (IBAction)playGPACal:(id)sender {
     
-    [self movieView];
+    [self movieViewWithPath:@"GPA Cal Video"];
     
 }
 
-- (void)movieView {
+- (IBAction)playSkillsUSA:(id)sender {
+    
+    [self movieViewWithPath:@"SillsUSA Meetings Video"];
+    
+}
+
+- (IBAction)playDelivery:(id)sender {
+    
+    [self movieViewWithPath:@"SillsUSA Meetings Video"];
+    
+}
+
+- (void)movieViewWithPath:(NSString*)path {
     
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString *moviePath = [bundle pathForResource:@"GPA Cal Video" ofType:@"mov"];
+    NSString *moviePath = [bundle pathForResource:path ofType:@"mov"];
     NSURL *movieURL = [NSURL fileURLWithPath:moviePath];
     
     self.videoController = [[MPMoviePlayerController alloc] init];
     
     [self.videoController setContentURL:movieURL];
-    [self.videoController.view setFrame:self.videoView.frame];
+    
+    if (self.videoViewSkills) {
+        [self.videoController.view setFrame:self.videoViewSkills.frame];
+    } else if (self.videoView) {
+        [self.videoController.view setFrame:self.videoView.frame];
+    } else if (self.videoViewDelivery) {
+        [self.videoController.view setFrame:self.videoViewDelivery.frame];
+    }
+    
     [self addSubview:self.videoController.view];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
