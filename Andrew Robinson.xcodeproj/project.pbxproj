@@ -11,18 +11,12 @@
 		4D040D6C1AEA90E6002BF50C /* ProjectsScrollContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */; };
 		4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */; };
 		4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */; };
-		4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47901AE9D5D60061FA43 /* Nikandros.png */; };
 		4D0A47951AE9D8930061FA43 /* About Me Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47941AE9D8930061FA43 /* About Me Scroll.xib */; };
 		4D0A47971AE9DA500061FA43 /* Skills And Interests Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47961AE9DA500061FA43 /* Skills And Interests Scroll.xib */; };
 		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
-		4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4731AE7ECD2005B46DD /* gpacal.png */; };
-		4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4841AE7ED76005B46DD /* blankicon.png */; };
 		4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A66E1ADFF86200979F32 /* AboutCell.xib */; };
 		4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6711ADFF98C00979F32 /* MainViewController.m */; };
 		4D13A6751AE0009500979F32 /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6741AE0009500979F32 /* AboutCell.m */; };
-		4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */; };
-		4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */; };
-		4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A67C1AE01FF200979F32 /* High School logo.png */; };
 		4D21568C1AE09B190059EA08 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21568B1AE09B190059EA08 /* Item.m */; };
 		4D2242531AE337010078C062 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2242521AE337010078C062 /* GameViewController.m */; };
 		4D2FE31C1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */; };
@@ -40,8 +34,6 @@
 		4D9911161AE4793E0038B554 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4D9911151AE4793E0038B554 /* GameScene.sks */; };
 		4D9911191AE479650038B554 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9911181AE479650038B554 /* GameScene.m */; };
 		4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99111B1AE481FA0038B554 /* GameScene.swift */; };
-		4DE522ED1AE5DFA400094627 /* xcode_hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE522EC1AE5DFA400094627 /* xcode_hammer.png */; };
-		4DE522EF1AE5E38800094627 /* deliverycoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE522EE1AE5E38800094627 /* deliverycoicon.png */; };
 		4DF583371AE56A150070FAC5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF583361AE56A150070FAC5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,21 +53,15 @@
 		4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsScrollContent.m; sourceTree = "<group>"; };
 		4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Education Scroll.xib"; sourceTree = "<group>"; };
 		4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Experience Scroll.xib"; sourceTree = "<group>"; };
-		4D0A47901AE9D5D60061FA43 /* Nikandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nikandros.png; path = Assets/Nikandros.png; sourceTree = "<group>"; };
 		4D0A47941AE9D8930061FA43 /* About Me Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "About Me Scroll.xib"; sourceTree = "<group>"; };
 		4D0A47961AE9DA500061FA43 /* Skills And Interests Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Skills And Interests Scroll.xib"; sourceTree = "<group>"; };
 		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
-		4D0FE4731AE7ECD2005B46DD /* gpacal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gpacal.png; path = Assets/gpacal.png; sourceTree = "<group>"; };
-		4D0FE4841AE7ED76005B46DD /* blankicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blankicon.png; path = Assets/blankicon.png; sourceTree = "<group>"; };
 		4D13A66E1ADFF86200979F32 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		4D13A6701ADFF98C00979F32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4D13A6711ADFF98C00979F32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4D13A6731AE0009500979F32 /* AboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
 		4D13A6741AE0009500979F32 /* AboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
-		4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "402-Faceit-SirArkimedesBukkitDev.png"; path = "Assets/402-Faceit-SirArkimedesBukkitDev.png"; sourceTree = "<group>"; };
-		4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GitHub_Logo.png; path = Assets/GitHub_Logo.png; sourceTree = "<group>"; };
-		4D13A67C1AE01FF200979F32 /* High School logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High School logo.png"; path = "Assets/High School logo.png"; sourceTree = "<group>"; };
 		4D21568A1AE09B190059EA08 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		4D21568B1AE09B190059EA08 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		4D2242511AE337010078C062 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -102,8 +88,6 @@
 		4D9911181AE479650038B554 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		4D99111A1AE481FA0038B554 /* Andrew Robinson-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Andrew Robinson-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D99111B1AE481FA0038B554 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		4DE522EC1AE5DFA400094627 /* xcode_hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xcode_hammer.png; path = Assets/xcode_hammer.png; sourceTree = "<group>"; };
-		4DE522EE1AE5E38800094627 /* deliverycoicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deliverycoicon.png; path = Assets/deliverycoicon.png; sourceTree = "<group>"; };
 		4DF583351AE56A150070FAC5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		4DF583361AE56A150070FAC5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +134,7 @@
 			name = "Detail Scroll View Content";
 			sourceTree = "<group>";
 		};
-		4D0FE4721AE7DFD3005B46DD /* ViewControllers */ = {
+		4D0FE4721AE7DFD3005B46DD /* Content */ = {
 			isa = PBXGroup;
 			children = (
 				4D0A478B1AE9A5FD0061FA43 /* Detail Scroll View Content */,
@@ -159,23 +143,13 @@
 				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
 				4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */,
 				4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */,
+				4D13A6701ADFF98C00979F32 /* MainViewController.h */,
+				4D13A6711ADFF98C00979F32 /* MainViewController.m */,
+				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
+				4D13A6731AE0009500979F32 /* AboutCell.h */,
+				4D13A6741AE0009500979F32 /* AboutCell.m */,
 			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4D13A66D1ADFF65E00979F32 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				4D0A47901AE9D5D60061FA43 /* Nikandros.png */,
-				4D0FE4841AE7ED76005B46DD /* blankicon.png */,
-				4D0FE4731AE7ECD2005B46DD /* gpacal.png */,
-				4DE522EE1AE5E38800094627 /* deliverycoicon.png */,
-				4DE522EC1AE5DFA400094627 /* xcode_hammer.png */,
-				4D13A67A1AE01F6A00979F32 /* GitHub_Logo.png */,
-				4D13A6761AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png */,
-				4D13A67C1AE01FF200979F32 /* High School logo.png */,
-			);
-			name = Assets;
+			name = Content;
 			sourceTree = "<group>";
 		};
 		4D2FE31F1AEAA0A8006862BF /* Projects Videos */ = {
@@ -209,18 +183,12 @@
 		4D51DEF01ADF53B200FD3DE9 /* Andrew Robinson */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FE4721AE7DFD3005B46DD /* ViewControllers */,
+				4D0FE4721AE7DFD3005B46DD /* Content */,
 				4D9911141AE4790D0038B554 /* Game Background */,
-				4D13A66D1ADFF65E00979F32 /* Assets */,
 				4D51DEF51ADF53B200FD3DE9 /* AppDelegate.h */,
 				4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */,
 				4D21568A1AE09B190059EA08 /* Item.h */,
 				4D21568B1AE09B190059EA08 /* Item.m */,
-				4D13A6701ADFF98C00979F32 /* MainViewController.h */,
-				4D13A6711ADFF98C00979F32 /* MainViewController.m */,
-				4D13A66E1ADFF86200979F32 /* AboutCell.xib */,
-				4D13A6731AE0009500979F32 /* AboutCell.h */,
-				4D13A6741AE0009500979F32 /* AboutCell.m */,
 				4D51DEFE1ADF53B200FD3DE9 /* Main.storyboard */,
 				4D51DF011ADF53B200FD3DE9 /* Images.xcassets */,
 				4D51DF031ADF53B200FD3DE9 /* LaunchScreen.xib */,
@@ -355,24 +323,16 @@
 				4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */,
 				4D2FE3231AEAB918006862BF /* SillsUSA Meetings Video.mov in Resources */,
 				4D2FE31E1AEA9CAD006862BF /* GPA Cal Detail.xib in Resources */,
-				4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */,
-				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
 				4D2FE31C1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib in Resources */,
-				4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */,
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
 				4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */,
-				4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */,
-				4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */,
 				4D9911161AE4793E0038B554 /* GameScene.sks in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D0A47971AE9DA500061FA43 /* Skills And Interests Scroll.xib in Resources */,
 				4D040D691AEA816F002BF50C /* Delivery Co Detail.xib in Resources */,
 				4D2FE3211AEAA0B5006862BF /* GPA Cal Video.mov in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
-				4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,
-				4DE522EF1AE5E38800094627 /* deliverycoicon.png in Resources */,
-				4DE522ED1AE5DFA400094627 /* xcode_hammer.png in Resources */,
 				4D2FE3251AEAC572006862BF /* Delivery Co Video.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
