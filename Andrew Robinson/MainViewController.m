@@ -182,7 +182,7 @@
             [self presentViewController:vc animated:YES completion:nil];
             break;
         case 4:
-            vc = [vc setupDetailwithTitle:@"Skills & Interests" withNib:@"Education Scroll"];
+            vc = [vc setupDetailwithTitle:@"Skills & Interests" withNib:@"Skills And Interests Scroll"];
             [self presentViewController:vc animated:YES completion:nil];
             break;
     }
