@@ -15,7 +15,6 @@
 
 @interface MainViewController ()
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageOfSelf;
 @property (weak, nonatomic) IBOutlet UILabel *selfText;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *gameContainer;
@@ -93,7 +92,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     if (self.shouldAnimate) {
-        self.imageOfSelf.alpha = 0;
         self.selfText.alpha = 0;
         
         CGRect viewFrame = self.collectionView.frame;
@@ -106,7 +104,6 @@
         
         self.collectionView.frame = viewFrame;
         
-        self.imageOfSelf.alpha = 1;
         self.selfText.alpha = 1;
         
         [UIView commitAnimations];
@@ -207,7 +204,6 @@
     
     self.collectionView.frame = viewFrame;
     
-    self.imageOfSelf.alpha = 0;
     self.selfText.alpha = 0;
     
     [UIView commitAnimations];
@@ -304,111 +300,9 @@
     
     self.collectionView.frame = viewFrame;
     
-    self.imageOfSelf.alpha = 1;
     self.selfText.alpha = 1;
     
     [UIView commitAnimations];
-    
-}
-
-#pragma mark - Rotation
-
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toOrientation duration:(NSTimeInterval)duration {
-    
-    if (toOrientation == UIInterfaceOrientationPortrait ||
-        toOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        
-        [[self view] addSubview:self.imageOfSelf];
-                
-        [self setupConstraintsforPortrait];
-        
-        
-    } else {
-        if (toOrientation == UIInterfaceOrientationLandscapeLeft ||
-            toOrientation == UIInterfaceOrientationLandscapeRight) {
-            
-            [self setupConstraintsforLandscaoe];
-            
-            [self.imageOfSelf removeFromSuperview];
-            
-        }
-    }
-}
-
-- (void)setupConstraintsforPortrait {
-    
-    // Constrain label to image
-    [self.view removeConstraint:self.topPosition];
-    
-    [self.view layoutIfNeeded];
-    
-    self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
-                                                    attribute:NSLayoutAttributeTop
-                                                    relatedBy:NSLayoutRelationEqual
-                                                       toItem:self.imageOfSelf
-                                                    attribute:NSLayoutAttributeBottom
-                                                   multiplier:1.f
-                                                     constant:20.f];
-    
-    [self.view addConstraint:self.topPosition];
-    
-    // Constrain image to view
-    NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:self.imageOfSelf
-                                                           attribute:NSLayoutAttributeTop
-                                                           relatedBy:NSLayoutRelationEqual
-                                                              toItem:self.view
-                                                           attribute:NSLayoutAttributeTop
-                                                          multiplier:1.f
-                                                            constant:30.f];
-    
-    NSLayoutConstraint *centerX = [NSLayoutConstraint constraintWithItem:self.imageOfSelf
-                                                               attribute:NSLayoutAttributeCenterX
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:self.selfText
-                                                               attribute:NSLayoutAttributeCenterX
-                                                              multiplier:1.f
-                                                                constant:0.f];
-    
-    [self.view addConstraint:top];
-    [self.view addConstraint:centerX];
-    
-    // Change font size
-    self.selfText.font = [UIFont fontWithName:@"AvenirNext-Regular" size:17.f];
-    
-    [UIView animateWithDuration:1
-                     animations:^{
-                         [self.view layoutIfNeeded]; // Called on parent view
-                     }];
-    
-    //        self.view animate:^() with duration: completion:^()
-
-}
-
-
-- (void)setupConstraintsforLandscaoe {
-    
-    // Begin constraint
-    [self.view removeConstraint:self.topPosition];
-    
-//    [self.view layoutIfNeeded];
-    
-    
-    self.topPosition = [NSLayoutConstraint constraintWithItem:self.selfText
-                                                    attribute:NSLayoutAttributeTop
-                                                    relatedBy:NSLayoutRelationEqual
-                                                       toItem:self.view
-                                                    attribute:NSLayoutAttributeTop
-                                                   multiplier:1.f
-                                                     constant:20.f];
-    [self.view addConstraint:self.topPosition];
-    
-    // Change font size
-    self.selfText.font = [UIFont fontWithName:@"AvenirNext-Regular" size:25.f];
-    
-    [UIView animateWithDuration:1
-                     animations:^{
-                         [self.view layoutIfNeeded]; // Called on parent view
-                     }];
     
 }
 
