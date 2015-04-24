@@ -23,16 +23,16 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="341" id="2qY-id-RF5"/>
                     </constraints>
-                    <string key="text">Platforms:
+                    <mutableString key="text">Platforms:
 iOS and Android
 
 Team: Andrew Robinson (me), Jared Golden, Grant Jennings, Michael Blades
 
 Description:
-Working with a team of four as lead developer, the team was tasked to create a game for the SkillsUSA contest Interactive Application and Game Design.
+Working with a team of four as lead developer, the team was tasked to create a game for the SkillsUSA contest Interactive Application and Game Design. Everything in the video is not final
 
 Awards:
-SkillsUSA State Gold medalist, and SkillsUSA Nationals qualifier</string>
+SkillsUSA State Gold medalist, and SkillsUSA Nationals qualifier</mutableString>
                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

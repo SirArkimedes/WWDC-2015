@@ -28,7 +28,7 @@
     } else if (self.videoViewSkills) {
         [self performSelector:@selector(movieViewWithPath:) withObject:@"SillsUSA Meetings Video" afterDelay:.5];
     } else if (self.videoViewDelivery) {
-        [self performSelector:@selector(movieViewWithPath:) withObject:@"SillsUSA Meetings Video" afterDelay:.5];
+        [self performSelector:@selector(movieViewWithPath:) withObject:@"Delivery Co Video" afterDelay:.5];
     }
     
 }
@@ -47,7 +47,7 @@
 
 - (IBAction)playDelivery:(id)sender {
     
-    [self movieViewWithPath:@"SillsUSA Meetings Video"];
+    [self movieViewWithPath:@"Delivery Co Video"];
     
 }
 
