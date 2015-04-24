@@ -25,6 +25,7 @@
 		4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A67C1AE01FF200979F32 /* High School logo.png */; };
 		4D21568C1AE09B190059EA08 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21568B1AE09B190059EA08 /* Item.m */; };
 		4D2242531AE337010078C062 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2242521AE337010078C062 /* GameViewController.m */; };
+		4D2FE31C1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */; };
 		4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF31ADF53B200FD3DE9 /* main.m */; };
 		4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */; };
 		4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */; };
@@ -75,6 +76,7 @@
 		4D21568B1AE09B190059EA08 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		4D2242511AE337010078C062 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		4D2242521AE337010078C062 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SkillsUSA Meetings Detail.xib"; sourceTree = "<group>"; };
 		4D51DEEE1ADF53B200FD3DE9 /* Andrew Robinson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andrew Robinson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DEF21ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DEF31ADF53B200FD3DE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */,
+				4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */,
 				4D040D6A1AEA90E6002BF50C /* ProjectsScrollContent.h */,
 				4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */,
 			);
@@ -332,6 +335,7 @@
 				4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */,
 				4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */,
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
+				4D2FE31C1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib in Resources */,
 				4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */,
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
 				4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */,

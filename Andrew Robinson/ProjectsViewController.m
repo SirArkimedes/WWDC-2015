@@ -103,7 +103,7 @@
             vc = [vc setupDetailwithTitle:@"Delivery Co." withNib:@"Delivery Co Detail"];
             break;
         case 1:
-            vc = [vc setupDetailwithTitle:@"SkillsUSA Meetings" withNib:@"Delivery Co Detail"];
+            vc = [vc setupDetailwithTitle:@"SkillsUSA Meetings" withNib:@"SkillsUSA Meetings Detail"];
             break;
         case 2:
             vc = [vc setupDetailwithTitle:@"GPA Cal" withNib:@"Delivery Co Detail"];
