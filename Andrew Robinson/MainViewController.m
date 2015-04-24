@@ -170,7 +170,7 @@
             [self animateHideMainView];
             break;
         case 1:
-            vc = [vc setupDetailwithTitle:@"About" withNib:@"Education Scroll"];
+            vc = [vc setupDetailwithTitle:@"About" withNib:@"About Me Scroll"];
             [self presentViewController:vc animated:YES completion:nil];
             break;
         case 2:

@@ -55,7 +55,7 @@
                         <constraint firstAttribute="width" constant="197" id="xhA-m6-ocY"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aU-hh-iKC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0aU-hh-iKC">
                     <rect key="frame" x="8" y="677" width="584" height="207"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="207" id="FuM-Dk-9Ga"/>
@@ -78,7 +78,7 @@ CompTIA A+ Certification, TestOut PC Pro Certification</string>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AP U.S. History, Principles of Engineering, Computer Technology, Communication Arts 4 DC, Intro to Engineering Design" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-Yr-BU2">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AP U.S. History, Principles of Engineering, Computer Technology, Communication Arts 4 DC, Intro to Engineering Design" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-Yr-BU2">
                     <rect key="frame" x="8" y="967" width="584" height="62"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="62" id="k42-Yo-yOf"/>
@@ -102,7 +102,7 @@ CompTIA A+ Certification, TestOut PC Pro Certification</string>
                         <constraint firstAttribute="height" constant="144" id="n0l-T6-Mfi"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyG-YW-J8O">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WyG-YW-J8O">
                     <rect key="frame" x="8" y="232" width="584" height="207"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="207" id="bpv-c2-3VW"/>
