@@ -162,32 +162,30 @@
     
 //    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
     
-//    switch (indexPath.row) {
-//        case 0:
-//            // Do something
-//            [self animateHideMainView];
-//            break;
-//        case 1:
-//            [self performSegueWithIdentifier:@"aboutMeId" sender:self];
-//            break;
-//        case 2:
-//            [self performSegueWithIdentifier:@"experienceId" sender:self];
-//            break;
-//        case 3:
-//            [self performSegueWithIdentifier:@"educationId" sender:self];
-//            break;
-//        case 4:
-//            [self performSegueWithIdentifier:@"skillsAndInterestsId" sender:self];
-//            break;
-//    }
-    
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     DetailViewController *vc = (DetailViewController *)[sb instantiateViewControllerWithIdentifier:@"detailViewController"];
     
-    vc = [vc setupDetailwithTitle:@"Education Test" withNib:@"Education Scroll"];
-    
-    // Present
-    [self presentViewController:vc animated:YES completion:nil];
+    switch (indexPath.row) {
+        case 0:
+            [self animateHideMainView];
+            break;
+        case 1:
+            vc = [vc setupDetailwithTitle:@"About" withNib:@"Education Scroll"];
+            [self presentViewController:vc animated:YES completion:nil];
+            break;
+        case 2:
+            vc = [vc setupDetailwithTitle:@"Experience" withNib:@"Experience Scroll"];
+            [self presentViewController:vc animated:YES completion:nil];
+            break;
+        case 3:
+            vc = [vc setupDetailwithTitle:@"Education" withNib:@"Education Scroll"];
+            [self presentViewController:vc animated:YES completion:nil];
+            break;
+        case 4:
+            vc = [vc setupDetailwithTitle:@"Skills & Interests" withNib:@"Education Scroll"];
+            [self presentViewController:vc animated:YES completion:nil];
+            break;
+    }
     
 }
 

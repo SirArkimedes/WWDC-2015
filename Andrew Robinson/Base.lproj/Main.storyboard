@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -176,30 +178,29 @@
                                                 <segue destination="t2K-Bz-MC2" kind="unwind" unwindAction="unwindToList:" id="I16-ON-sgf"/>
                                             </connections>
                                         </button>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O19-7r-Wer">
+                                            <rect key="frame" x="16" y="79" width="569" height="521"/>
+                                        </scrollView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-zr-M6Z">
-                                            <rect key="frame" x="112" y="30" width="376" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="376" id="VLy-B8-5Pl"/>
-                                                <constraint firstAttribute="height" constant="21" id="j9C-ct-yHl"/>
-                                            </constraints>
+                                            <rect key="frame" x="112" y="24" width="376" height="33"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O19-7r-Wer">
-                                            <rect key="frame" x="16" y="79" width="569" height="521"/>
-                                        </scrollView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="baseline" secondItem="dB1-Pa-phC" secondAttribute="firstBaseline" id="CvB-E4-I1B"/>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="24" id="Dja-7e-ccz"/>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="trailing" constant="46" id="F8P-lN-B0Y"/>
                                         <constraint firstItem="dB1-Pa-phC" firstAttribute="leading" secondItem="nED-ND-eyr" secondAttribute="leading" constant="16" id="KGN-8h-xb5"/>
                                         <constraint firstItem="O19-7r-Wer" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="leading" id="YNv-RN-lHn"/>
                                         <constraint firstAttribute="bottom" secondItem="O19-7r-Wer" secondAttribute="bottom" id="gpu-4H-yXf"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="rsI-zr-M6Z" secondAttribute="bottom" constant="28" id="hQD-lR-j5y"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="rsI-zr-M6Z" secondAttribute="centerX" id="iWU-8z-qA0"/>
                                         <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="nED-ND-eyr" secondAttribute="centerX" id="kho-FA-MR4"/>
-                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="30" id="pAg-jf-x07"/>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="centerX" secondItem="O19-7r-Wer" secondAttribute="centerX" id="psf-Jk-MOJ"/>
                                         <constraint firstItem="dB1-Pa-phC" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="26" id="s6L-oa-vhb"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="rsI-zr-M6Z" secondAttribute="bottom" constant="22" id="uNo-wh-aY9"/>
                                         <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="dB1-Pa-phC" secondAttribute="bottom" constant="23" id="vf9-VT-sFI"/>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="baseline" secondItem="dB1-Pa-phC" secondAttribute="baseline" id="z63-5h-zKV"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="dark"/>

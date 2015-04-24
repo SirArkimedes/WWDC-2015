@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */; };
+		4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */; };
+		4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47901AE9D5D60061FA43 /* Nikandros.png */; };
 		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
 		4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4731AE7ECD2005B46DD /* gpacal.png */; };
 		4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4841AE7ED76005B46DD /* blankicon.png */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Education Scroll.xib"; sourceTree = "<group>"; };
+		4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Experience Scroll.xib"; sourceTree = "<group>"; };
+		4D0A47901AE9D5D60061FA43 /* Nikandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nikandros.png; path = Assets/Nikandros.png; sourceTree = "<group>"; };
 		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 		4D0FE4731AE7ECD2005B46DD /* gpacal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gpacal.png; path = Assets/gpacal.png; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */,
+				4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */,
 			);
 			name = "Detail Scroll View Content";
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		4D13A66D1ADFF65E00979F32 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4D0A47901AE9D5D60061FA43 /* Nikandros.png */,
 				4D0FE4841AE7ED76005B46DD /* blankicon.png */,
 				4D0FE4731AE7ECD2005B46DD /* gpacal.png */,
 				4DE522EE1AE5E38800094627 /* deliverycoicon.png */,
@@ -305,11 +311,13 @@
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
 				4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */,
 				4D51DF001ADF53B200FD3DE9 /* Main.storyboard in Resources */,
+				4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */,
 				4D13A6771AE0133F00979F32 /* 402-Faceit-SirArkimedesBukkitDev.png in Resources */,
 				4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */,
 				4D9911161AE4793E0038B554 /* GameScene.sks in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
+				4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,
 				4DE522EF1AE5E38800094627 /* deliverycoicon.png in Resources */,
 				4DE522ED1AE5DFA400094627 /* xcode_hammer.png in Resources */,
