@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D040D691AEA816F002BF50C /* Delivery Co Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */; };
+		4D040D6C1AEA90E6002BF50C /* ProjectsScrollContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */; };
 		4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */; };
 		4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */; };
 		4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47901AE9D5D60061FA43 /* Nikandros.png */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Delivery Co Detail.xib"; sourceTree = "<group>"; };
+		4D040D6A1AEA90E6002BF50C /* ProjectsScrollContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsScrollContent.h; sourceTree = "<group>"; };
+		4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsScrollContent.m; sourceTree = "<group>"; };
 		4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Education Scroll.xib"; sourceTree = "<group>"; };
 		4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Experience Scroll.xib"; sourceTree = "<group>"; };
 		4D0A47901AE9D5D60061FA43 /* Nikandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nikandros.png; path = Assets/Nikandros.png; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */,
+				4D040D6A1AEA90E6002BF50C /* ProjectsScrollContent.h */,
+				4D040D6B1AEA90E6002BF50C /* ProjectsScrollContent.m */,
 			);
 			name = "Projects Details";
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
 				4D9911191AE479650038B554 /* GameScene.m in Sources */,
+				4D040D6C1AEA90E6002BF50C /* ProjectsScrollContent.m in Sources */,
 				4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
