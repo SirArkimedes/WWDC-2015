@@ -168,7 +168,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB1-Pa-phC">
                                             <rect key="frame" x="16" y="26" width="50" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="4am-Kq-HCs"/>
+                                                <constraint firstAttribute="width" constant="50" id="W88-H1-CaS"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                             <state key="normal" title="Back">
@@ -182,8 +182,8 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-zr-M6Z">
                                             <rect key="frame" x="237" y="30" width="126" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="126" id="9AZ-mP-3Ge"/>
-                                                <constraint firstAttribute="height" constant="21" id="jng-Ob-rOg"/>
+                                                <constraint firstAttribute="width" constant="126" id="VLy-B8-5Pl"/>
+                                                <constraint firstAttribute="height" constant="21" id="j9C-ct-yHl"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -191,38 +191,18 @@
                                         </label>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O19-7r-Wer">
                                             <rect key="frame" x="16" y="79" width="569" height="521"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-sU-BgY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="569" height="800"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-nt-BiI">
-                                                            <rect key="frame" x="33" y="615" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkW-qL-BFH">
-                                                            <rect key="frame" x="33" y="34" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </subviews>
                                         </scrollView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="O19-7r-Wer" secondAttribute="bottom" id="6Xo-9Z-QXO"/>
-                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="30" id="Eq4-aB-ag3"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="rsI-zr-M6Z" secondAttribute="centerX" id="H7f-zp-xAV"/>
-                                        <constraint firstItem="dB1-Pa-phC" firstAttribute="leading" secondItem="nED-ND-eyr" secondAttribute="leading" constant="16" id="RGc-0U-sHX"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="79" id="lzY-SY-y6z"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="dB1-Pa-phC" secondAttribute="bottom" constant="23" id="mQM-xZ-1zY"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="nED-ND-eyr" secondAttribute="centerX" id="nKb-iF-elx"/>
-                                        <constraint firstItem="dB1-Pa-phC" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="26" id="t65-xj-2Zh"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="leading" id="yOg-AT-7h3"/>
+                                        <constraint firstItem="dB1-Pa-phC" firstAttribute="leading" secondItem="nED-ND-eyr" secondAttribute="leading" constant="16" id="KGN-8h-xb5"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="leading" id="YNv-RN-lHn"/>
+                                        <constraint firstAttribute="bottom" secondItem="O19-7r-Wer" secondAttribute="bottom" id="gpu-4H-yXf"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="rsI-zr-M6Z" secondAttribute="bottom" constant="28" id="hQD-lR-j5y"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="rsI-zr-M6Z" secondAttribute="centerX" id="iWU-8z-qA0"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="nED-ND-eyr" secondAttribute="centerX" id="kho-FA-MR4"/>
+                                        <constraint firstItem="rsI-zr-M6Z" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="30" id="pAg-jf-x07"/>
+                                        <constraint firstItem="dB1-Pa-phC" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="26" id="s6L-oa-vhb"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="dB1-Pa-phC" secondAttribute="bottom" constant="23" id="vf9-VT-sFI"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -230,10 +210,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="top" secondItem="asw-PD-bA5" secondAttribute="top" id="R81-vM-8QF"/>
-                            <constraint firstAttribute="trailing" secondItem="Aci-Rb-ff6" secondAttribute="trailing" id="dCr-wy-grK"/>
-                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="leading" secondItem="asw-PD-bA5" secondAttribute="leading" id="fKt-qb-Xh6"/>
-                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="bottom" secondItem="oYf-g0-KMf" secondAttribute="top" id="gZw-zn-OkY"/>
+                            <constraint firstAttribute="trailing" secondItem="Aci-Rb-ff6" secondAttribute="trailing" id="0pM-gV-hbg"/>
+                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="top" secondItem="asw-PD-bA5" secondAttribute="top" id="RJK-3r-IP7"/>
+                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="leading" secondItem="asw-PD-bA5" secondAttribute="leading" id="clv-Ij-Cft"/>
+                            <constraint firstItem="Aci-Rb-ff6" firstAttribute="bottom" secondItem="oYf-g0-KMf" secondAttribute="top" id="eMP-wD-HSO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="XLz-8e-rQi">
@@ -244,7 +224,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="eduScroll" destination="O19-7r-Wer" id="S8A-Ru-AEU"/>
+                        <outlet property="detailLabel" destination="rsI-zr-M6Z" id="cSb-gm-BR5"/>
+                        <outlet property="scrollView" destination="O19-7r-Wer" id="y9X-rJ-Uux"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEf-cw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>

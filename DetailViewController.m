@@ -10,7 +10,8 @@
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *eduScroll;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
 @end
 
@@ -22,7 +23,11 @@
     
     [self setNeedsStatusBarAppearanceUpdate];
     
-    self.eduScroll.contentSize = CGSizeMake(320, 800);
+    UIScrollView *content = [[[NSBundle mainBundle] loadNibNamed:@"Education Scroll" owner:self options:nil] objectAtIndex:0];
+    content.frame = CGRectMake(0, 0, self.view.frame.size.width - 32, content.frame.size.height);
+    content.backgroundColor = [UIColor clearColor];
+    [self.scrollView addSubview:content];
+    self.scrollView.contentSize = content.frame.size;
     
 }
 

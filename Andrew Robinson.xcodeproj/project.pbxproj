@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */; };
 		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
 		4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4731AE7ECD2005B46DD /* gpacal.png */; };
 		4D0FE4851AE7ED76005B46DD /* blankicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0FE4841AE7ED76005B46DD /* blankicon.png */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Education Scroll.xib"; sourceTree = "<group>"; };
 		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 		4D0FE4731AE7ECD2005B46DD /* gpacal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gpacal.png; path = Assets/gpacal.png; sourceTree = "<group>"; };
@@ -101,9 +103,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0A478B1AE9A5FD0061FA43 /* Detail Scroll View Content */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */,
+			);
+			name = "Detail Scroll View Content";
+			sourceTree = "<group>";
+		};
 		4D0FE4721AE7DFD3005B46DD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D0A478B1AE9A5FD0061FA43 /* Detail Scroll View Content */,
 				4DF583351AE56A150070FAC5 /* DetailViewController.h */,
 				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
 				4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */,
@@ -289,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */,
 				4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */,
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,
 				4D0FE4741AE7ECD2005B46DD /* gpacal.png in Resources */,
