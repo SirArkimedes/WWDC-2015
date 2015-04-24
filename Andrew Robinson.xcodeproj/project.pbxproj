@@ -28,6 +28,7 @@
 		4D2FE31C1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */; };
 		4D2FE31E1AEA9CAD006862BF /* GPA Cal Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE31D1AEA9CAD006862BF /* GPA Cal Detail.xib */; };
 		4D2FE3211AEAA0B5006862BF /* GPA Cal Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE3201AEAA0B5006862BF /* GPA Cal Video.mov */; };
+		4D2FE3231AEAB918006862BF /* SillsUSA Meetings Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4D2FE3221AEAB918006862BF /* SillsUSA Meetings Video.mov */; };
 		4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF31ADF53B200FD3DE9 /* main.m */; };
 		4D51DEF71ADF53B200FD3DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF61ADF53B200FD3DE9 /* AppDelegate.m */; };
 		4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D51DEF81ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld */; };
@@ -81,6 +82,7 @@
 		4D2FE31B1AEA9AFE006862BF /* SkillsUSA Meetings Detail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SkillsUSA Meetings Detail.xib"; sourceTree = "<group>"; };
 		4D2FE31D1AEA9CAD006862BF /* GPA Cal Detail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "GPA Cal Detail.xib"; sourceTree = "<group>"; };
 		4D2FE3201AEAA0B5006862BF /* GPA Cal Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "GPA Cal Video.mov"; path = "Assets/GPA Cal Video.mov"; sourceTree = "<group>"; };
+		4D2FE3221AEAB918006862BF /* SillsUSA Meetings Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "SillsUSA Meetings Video.mov"; path = "Assets/SillsUSA Meetings Video.mov"; sourceTree = "<group>"; };
 		4D51DEEE1ADF53B200FD3DE9 /* Andrew Robinson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andrew Robinson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51DEF21ADF53B200FD3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D51DEF31ADF53B200FD3DE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		4D2FE31F1AEAA0A8006862BF /* Projects Videos */ = {
 			isa = PBXGroup;
 			children = (
+				4D2FE3221AEAB918006862BF /* SillsUSA Meetings Video.mov */,
 				4D2FE3201AEAA0B5006862BF /* GPA Cal Video.mov */,
 			);
 			name = "Projects Videos";
@@ -347,6 +350,7 @@
 			files = (
 				4D0A47951AE9D8930061FA43 /* About Me Scroll.xib in Resources */,
 				4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */,
+				4D2FE3231AEAB918006862BF /* SillsUSA Meetings Video.mov in Resources */,
 				4D2FE31E1AEA9CAD006862BF /* GPA Cal Detail.xib in Resources */,
 				4D13A67D1AE01FF200979F32 /* High School logo.png in Resources */,
 				4D13A67B1AE01F6A00979F32 /* GitHub_Logo.png in Resources */,

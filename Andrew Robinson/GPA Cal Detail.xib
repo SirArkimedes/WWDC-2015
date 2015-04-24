@@ -41,32 +41,34 @@ Very first app to be published to the iOS App Store. This calculates GPA based o
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-Br-ad9">
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-Br-ad9">
                     <rect key="frame" x="160" y="418" width="281" height="500"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-sz-Afh">
-                            <rect key="frame" x="104" y="235" width="73" height="30"/>
-                            <state key="normal" title="Play Video">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="playGPACal:" destination="i9u-lW-Uzy" eventType="touchUpInside" id="Mjf-M4-PtJ"/>
-                            </connections>
-                        </button>
-                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="SzD-sz-Afh" firstAttribute="centerX" secondItem="xc3-Br-ad9" secondAttribute="centerX" id="W2z-pW-4PK"/>
                         <constraint firstAttribute="height" constant="500" id="dhd-g7-CxP"/>
                         <constraint firstAttribute="width" constant="281" id="dva-OD-uO4"/>
-                        <constraint firstItem="SzD-sz-Afh" firstAttribute="centerY" secondItem="xc3-Br-ad9" secondAttribute="centerY" id="qmH-0Y-6Qm"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-sz-Afh">
+                    <rect key="frame" x="232" y="454" width="136" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="jkB-Id-zuE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <state key="normal" title="Play Video">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playGPACal:" destination="i9u-lW-Uzy" eventType="touchUpInside" id="Mjf-M4-PtJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="t1J-9S-NhV" secondAttribute="centerX" id="3L3-3f-7fJ"/>
                 <constraint firstItem="EbD-Qn-CZc" firstAttribute="top" secondItem="t1J-9S-NhV" secondAttribute="bottom" constant="8" symbolic="YES" id="Nuc-0z-a5s"/>
+                <constraint firstItem="SzD-sz-Afh" firstAttribute="centerY" secondItem="i9u-lW-Uzy" secondAttribute="centerY" id="PLG-yH-Xqu"/>
                 <constraint firstItem="JjA-6b-rG2" firstAttribute="top" secondItem="i9u-lW-Uzy" secondAttribute="topMargin" id="QkN-jB-kaN"/>
                 <constraint firstAttribute="bottom" secondItem="EbD-Qn-CZc" secondAttribute="bottom" constant="528" id="Tci-Xl-vDa"/>
                 <constraint firstItem="xc3-Br-ad9" firstAttribute="top" secondItem="EbD-Qn-CZc" secondAttribute="bottom" constant="8" symbolic="YES" id="Uve-Kq-0wM"/>
@@ -74,6 +76,8 @@ Very first app to be published to the iOS App Store. This calculates GPA based o
                 <constraint firstAttribute="centerX" secondItem="JjA-6b-rG2" secondAttribute="centerX" constant="-0.5" id="bgd-84-QAf"/>
                 <constraint firstItem="xc3-Br-ad9" firstAttribute="centerX" secondItem="EbD-Qn-CZc" secondAttribute="centerX" id="fcp-cL-i36"/>
                 <constraint firstItem="t1J-9S-NhV" firstAttribute="leading" secondItem="i9u-lW-Uzy" secondAttribute="leadingMargin" id="kTh-nn-tvG"/>
+                <constraint firstItem="SzD-sz-Afh" firstAttribute="top" secondItem="EbD-Qn-CZc" secondAttribute="bottom" constant="44" id="kqY-bL-zpM"/>
+                <constraint firstItem="SzD-sz-Afh" firstAttribute="centerX" secondItem="EbD-Qn-CZc" secondAttribute="centerX" id="tf0-Ed-1TU"/>
                 <constraint firstItem="EbD-Qn-CZc" firstAttribute="centerX" secondItem="t1J-9S-NhV" secondAttribute="centerX" id="wU5-aP-IUb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

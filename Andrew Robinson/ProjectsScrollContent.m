@@ -17,6 +17,12 @@
 
 @implementation ProjectsScrollContent
 
+- (void)didMoveToSuperview {
+    
+    [self performSelector:@selector(movieView) withObject:nil afterDelay:.5];
+    
+}
+
 - (IBAction)playGPACal:(id)sender {
     
     [self movieView];
