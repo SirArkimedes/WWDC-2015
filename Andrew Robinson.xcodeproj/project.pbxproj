@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D040D691AEA816F002BF50C /* Delivery Co Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */; };
 		4D0A478D1AE9B03E0061FA43 /* Education Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */; };
 		4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */; };
 		4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47901AE9D5D60061FA43 /* Nikandros.png */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Delivery Co Detail.xib"; sourceTree = "<group>"; };
 		4D0A478C1AE9B03E0061FA43 /* Education Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Education Scroll.xib"; sourceTree = "<group>"; };
 		4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Experience Scroll.xib"; sourceTree = "<group>"; };
 		4D0A47901AE9D5D60061FA43 /* Nikandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nikandros.png; path = Assets/Nikandros.png; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D040D671AEA8119002BF50C /* Projects Details */ = {
+			isa = PBXGroup;
+			children = (
+				4D040D681AEA816F002BF50C /* Delivery Co Detail.xib */,
+			);
+			name = "Projects Details";
+			sourceTree = "<group>";
+		};
 		4D0A478B1AE9A5FD0061FA43 /* Detail Scroll View Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0A478B1AE9A5FD0061FA43 /* Detail Scroll View Content */,
+				4D040D671AEA8119002BF50C /* Projects Details */,
 				4DF583351AE56A150070FAC5 /* DetailViewController.h */,
 				4DF583361AE56A150070FAC5 /* DetailViewController.m */,
 				4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */,
@@ -324,6 +335,7 @@
 				4D9911161AE4793E0038B554 /* GameScene.sks in Resources */,
 				4D51DF051ADF53B200FD3DE9 /* LaunchScreen.xib in Resources */,
 				4D0A47971AE9DA500061FA43 /* Skills And Interests Scroll.xib in Resources */,
+				4D040D691AEA816F002BF50C /* Delivery Co Detail.xib in Resources */,
 				4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */,
 				4D0A47911AE9D5D60061FA43 /* Nikandros.png in Resources */,
 				4D51DF021ADF53B200FD3DE9 /* Images.xcassets in Resources */,

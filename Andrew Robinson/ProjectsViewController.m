@@ -9,6 +9,7 @@
 #import "ProjectsViewController.h"
 #import "AboutCell.h"
 #import "Item.h"
+#import "DetailViewController.h"
 
 @interface ProjectsViewController ()
 
@@ -85,6 +86,31 @@
     cell.cellText.text = grabbedItem.itemText;
     
     return cell;
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    // If you need to use the touched cell, you can retrieve it like so
+    //    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    //    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *vc = (DetailViewController *)[sb instantiateViewControllerWithIdentifier:@"detailViewController"];
+    
+    switch (indexPath.row) {
+        case 0:
+            vc = [vc setupDetailwithTitle:@"Delivery Co." withNib:@"Delivery Co Detail"];
+            break;
+        case 1:
+            vc = [vc setupDetailwithTitle:@"SkillsUSA Meetings" withNib:@"Delivery Co Detail"];
+            break;
+        case 2:
+            vc = [vc setupDetailwithTitle:@"GPA Cal" withNib:@"Delivery Co Detail"];
+            break;
+    }
+    
+    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

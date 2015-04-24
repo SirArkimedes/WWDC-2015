@@ -157,8 +157,7 @@
     
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     // If you need to use the touched cell, you can retrieve it like so
 //    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     
@@ -219,6 +218,9 @@
 
 - (void)animateShowProjectsView {
     
+    // Hide
+    self.collectionView.hidden = YES;
+    
     // Unhide
     self.projectsContainer.hidden = NO;
     self.backButton.hidden = NO;
@@ -276,10 +278,18 @@
 
 - (void)originalMainView {
     
+    self.collectionView.hidden = NO;
+    
     self.backButton.hidden = YES;
     self.projectsContainer.hidden = YES;
     
 //    NSLog(@"End: %@", NSStringFromCGRect(self.backButton.frame));
+    
+    //
+    self.collectionView.frame = CGRectMake(self.collectionView.frame.origin.x,
+                                           self.view.frame.size.height,
+                                           self.collectionView.frame.size.width,
+                                           self.collectionView.frame.size.height);
     
     // Put button back to og position
     self.backButton.frame = CGRectMake(16, 26, 50, 30);
