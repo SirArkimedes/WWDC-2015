@@ -96,7 +96,7 @@ CompTIA A+ Certification, TestOut PC Pro Certification</string>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High School logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-FQ-86B">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CTC" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-FQ-86B">
                     <rect key="frame" x="202" y="447" width="197" height="144"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="144" id="n0l-T6-Mfi"/>
@@ -155,6 +155,7 @@ Activities:
         </view>
     </objects>
     <resources>
+        <image name="CTC" width="248" height="113"/>
         <image name="High School logo.png" width="359" height="300"/>
     </resources>
 </document>
