@@ -48,7 +48,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High School logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="BoT-yf-j3p">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="High School logo" translatesAutoresizingMaskIntoConstraints="NO" id="BoT-yf-j3p">
                     <rect key="frame" x="202" y="8" width="197" height="144"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="144" id="gYu-XE-oQ7"/>
@@ -156,6 +156,6 @@ Activities:
     </objects>
     <resources>
         <image name="CTC" width="248" height="113"/>
-        <image name="High School logo.png" width="359" height="300"/>
+        <image name="High School logo" width="359" height="300"/>
     </resources>
 </document>

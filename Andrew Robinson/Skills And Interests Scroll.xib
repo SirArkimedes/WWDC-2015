@@ -49,6 +49,6 @@ Development, video games, cycling, soccer, mobile electronics, and any and all t
         </view>
     </objects>
     <resources>
-        <image name="iPhone6" width="800" height="600"/>
+        <image name="iPhone6" width="172" height="348"/>
     </resources>
 </document>

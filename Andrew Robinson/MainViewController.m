@@ -48,7 +48,7 @@
     Item *secondItem = [[Item alloc] initWithImage:@"deliverycoicon.png" withText:@"Projects"];
     [self.items addObject:secondItem];
     
-    Item *firstItem = [[Item alloc] initWithImage:@"402-Faceit-SirArkimedesBukkitDev.png" withText:@"About Me"];
+    Item *firstItem = [[Item alloc] initWithImage:@"Andrew Robinson.png" withText:@"About Me"];
     [self.items addObject:firstItem];
     
     Item *fiveItem = [[Item alloc] initWithImage:@"xcode_hammer.png" withText:@"Experience"];

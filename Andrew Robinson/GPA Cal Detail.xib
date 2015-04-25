@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="902"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpacal.png" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-6b-rG2">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpacal" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-6b-rG2">
                     <rect key="frame" x="202" y="8" width="197" height="144"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="197" id="TOe-5D-T9b"/>
@@ -76,6 +76,6 @@ Very first app to be published to the iOS App Store. This calculates GPA based o
         </view>
     </objects>
     <resources>
-        <image name="gpacal.png" width="512" height="512"/>
+        <image name="gpacal" width="512" height="512"/>
     </resources>
 </document>
