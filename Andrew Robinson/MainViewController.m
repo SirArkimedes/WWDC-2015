@@ -57,7 +57,7 @@
     Item *thirdItem = [[Item alloc] initWithImage:@"High School logo.png" withText:@"Education"];
     [self.items addObject:thirdItem];
     
-    Item *fourthItem = [[Item alloc] initWithImage:@"GitHub_Logo.png" withText:@"Skills & Interests"];
+    Item *fourthItem = [[Item alloc] initWithImage:@"iPhone6.png" withText:@"Skills & Interests"];
     [self.items addObject:fourthItem];
     
     // Set clear color to collection view for no background.
