@@ -13,6 +13,7 @@
 		4D0A478F1AE9D3BD0061FA43 /* Experience Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */; };
 		4D0A47951AE9D8930061FA43 /* About Me Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47941AE9D8930061FA43 /* About Me Scroll.xib */; };
 		4D0A47971AE9DA500061FA43 /* Skills And Interests Scroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A47961AE9DA500061FA43 /* Skills And Interests Scroll.xib */; };
+		4D0DE85C1AED64C700001810 /* DetailScrollContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DE85B1AED64C700001810 /* DetailScrollContent.m */; };
 		4D0FE4711AE7DF3C005B46DD /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */; };
 		4D13A66F1ADFF86200979F32 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D13A66E1ADFF86200979F32 /* AboutCell.xib */; };
 		4D13A6721ADFF98C00979F32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A6711ADFF98C00979F32 /* MainViewController.m */; };
@@ -55,6 +56,8 @@
 		4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Experience Scroll.xib"; sourceTree = "<group>"; };
 		4D0A47941AE9D8930061FA43 /* About Me Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "About Me Scroll.xib"; sourceTree = "<group>"; };
 		4D0A47961AE9DA500061FA43 /* Skills And Interests Scroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Skills And Interests Scroll.xib"; sourceTree = "<group>"; };
+		4D0DE85A1AED64C700001810 /* DetailScrollContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailScrollContent.h; sourceTree = "<group>"; };
+		4D0DE85B1AED64C700001810 /* DetailScrollContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailScrollContent.m; sourceTree = "<group>"; };
 		4D0FE46F1AE7DF3C005B46DD /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		4D0FE4701AE7DF3C005B46DD /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 		4D13A66E1ADFF86200979F32 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				4D0A478E1AE9D3BD0061FA43 /* Experience Scroll.xib */,
 				4D0A47941AE9D8930061FA43 /* About Me Scroll.xib */,
 				4D0A47961AE9DA500061FA43 /* Skills And Interests Scroll.xib */,
+				4D0DE85A1AED64C700001810 /* DetailScrollContent.h */,
+				4D0DE85B1AED64C700001810 /* DetailScrollContent.m */,
 			);
 			name = "Detail Scroll View Content";
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				4D99111C1AE481FA0038B554 /* GameScene.swift in Sources */,
 				4D51DEFA1ADF53B200FD3DE9 /* Andrew_Robinson.xcdatamodeld in Sources */,
 				4DF583371AE56A150070FAC5 /* DetailViewController.m in Sources */,
+				4D0DE85C1AED64C700001810 /* DetailScrollContent.m in Sources */,
 				4D13A6751AE0009500979F32 /* AboutCell.m in Sources */,
 				4D51DEF41ADF53B200FD3DE9 /* main.m in Sources */,
 				4D9911191AE479650038B554 /* GameScene.m in Sources */,

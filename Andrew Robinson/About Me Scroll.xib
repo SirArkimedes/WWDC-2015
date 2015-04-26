@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="hdQ-Yg-xVl">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="375"/>
+        <view contentMode="scaleToFill" id="hdQ-Yg-xVl" customClass="DetailScrollContent">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="444"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Andrew Robinson." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLT-UQ-xnm">
@@ -38,6 +38,18 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNH-4r-Hib">
+                    <rect key="frame" x="206" y="363" width="189" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="189" id="zj4-aH-T4Z"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="git-store-green">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="github:" destination="hdQ-Yg-xVl" eventType="touchUpInside" id="Iwj-Zv-dDu"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -47,13 +59,17 @@
                 <constraint firstItem="rLT-UQ-xnm" firstAttribute="centerX" secondItem="4AU-oD-6dl" secondAttribute="centerX" id="L5l-Ek-7Oj"/>
                 <constraint firstItem="4AU-oD-6dl" firstAttribute="top" secondItem="rLT-UQ-xnm" secondAttribute="bottom" constant="8" symbolic="YES" id="N1B-kz-Fdd"/>
                 <constraint firstItem="4AU-oD-6dl" firstAttribute="trailing" secondItem="hdQ-Yg-xVl" secondAttribute="trailingMargin" id="OjH-Y0-Q8y"/>
+                <constraint firstItem="RNH-4r-Hib" firstAttribute="top" secondItem="4AU-oD-6dl" secondAttribute="bottom" constant="8" symbolic="YES" id="e5y-l9-pTh"/>
                 <constraint firstItem="4tw-B2-2qX" firstAttribute="top" secondItem="hdQ-Yg-xVl" secondAttribute="topMargin" id="okD-p1-FvW"/>
+                <constraint firstAttribute="bottom" secondItem="RNH-4r-Hib" secondAttribute="bottom" constant="20" id="x7k-6t-Mhe"/>
+                <constraint firstItem="RNH-4r-Hib" firstAttribute="centerX" secondItem="4AU-oD-6dl" secondAttribute="centerX" id="zFl-Xf-He0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="540" y="356.5"/>
+            <point key="canvasLocation" x="540" y="391"/>
         </view>
     </objects>
     <resources>
         <image name="Andrew Robinson" width="519" height="520"/>
+        <image name="git-store-green" width="902" height="312"/>
     </resources>
 </document>

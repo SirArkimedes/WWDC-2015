@@ -33,6 +33,8 @@
     
 }
 
+#pragma mark - Buttons
+
 - (IBAction)playGPACal:(id)sender {
     
     [self movieViewWithPath:@"GPA Cal Video"];
@@ -50,6 +52,9 @@
     [self movieViewWithPath:@"Delivery Co Video"];
     
 }
+
+
+#pragma mark - Videos
 
 - (void)movieViewWithPath:(NSString*)path {
     
