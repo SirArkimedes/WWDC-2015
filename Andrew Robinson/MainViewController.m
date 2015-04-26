@@ -147,6 +147,14 @@
     
     Item *grabbedItem = [self.items objectAtIndex:indexPath.row];
     
+    if ([grabbedItem.imageName isEqual:@"Andrew Robinson.png"]) {
+        cell.cellImage.layer.cornerRadius = cell.cellImage.frame.size.width / 2;
+        cell.cellImage.clipsToBounds = YES;
+        
+        cell.cellImage.layer.borderWidth = 3.0f;
+        cell.cellImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    }
+    
     cell.cellImage.image = [UIImage imageNamed:grabbedItem.imageName];
     cell.cellText.text = grabbedItem.itemText;
     
