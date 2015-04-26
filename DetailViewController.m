@@ -46,7 +46,7 @@
     
     // Set scrollView content
     UIView *content = [[[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil] objectAtIndex:0];
-    content.frame = CGRectMake(0, 0, self.view.frame.size.width - 32, content.frame.size.height);
+    content.frame = CGRectMake(0, 0, self.view.frame.size.width, content.frame.size.height);
     content.backgroundColor = [UIColor clearColor];
     [self.scrollView addSubview:content];
     self.scrollView.contentSize = content.frame.size;

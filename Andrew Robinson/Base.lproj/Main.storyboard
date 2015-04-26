@@ -168,7 +168,7 @@
                                             </connections>
                                         </button>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O19-7r-Wer">
-                                            <rect key="frame" x="16" y="79" width="569" height="521"/>
+                                            <rect key="frame" x="0.0" y="79" width="600" height="521"/>
                                         </scrollView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-zr-M6Z">
                                             <rect key="frame" x="74" y="24" width="453" height="33"/>
@@ -184,7 +184,7 @@
                                         <constraint firstItem="rsI-zr-M6Z" firstAttribute="centerX" secondItem="O19-7r-Wer" secondAttribute="centerX" id="RCA-HE-yfB"/>
                                         <constraint firstItem="O19-7r-Wer" firstAttribute="top" secondItem="rsI-zr-M6Z" secondAttribute="bottom" constant="22" id="S8T-82-11h"/>
                                         <constraint firstItem="rsI-zr-M6Z" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="trailing" constant="8" symbolic="YES" id="SXK-Ed-ZWK"/>
-                                        <constraint firstItem="O19-7r-Wer" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="leading" id="YNv-RN-lHn"/>
+                                        <constraint firstItem="O19-7r-Wer" firstAttribute="leading" secondItem="dB1-Pa-phC" secondAttribute="leading" constant="-16" id="YNv-RN-lHn"/>
                                         <constraint firstItem="rsI-zr-M6Z" firstAttribute="top" secondItem="nED-ND-eyr" secondAttribute="top" constant="24" id="exO-0G-eF1"/>
                                         <constraint firstAttribute="bottom" secondItem="O19-7r-Wer" secondAttribute="bottom" id="gpu-4H-yXf"/>
                                         <constraint firstItem="O19-7r-Wer" firstAttribute="centerX" secondItem="nED-ND-eyr" secondAttribute="centerX" id="kho-FA-MR4"/>
