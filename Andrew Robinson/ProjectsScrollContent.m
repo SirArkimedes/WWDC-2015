@@ -53,6 +53,34 @@
     
 }
 
+- (IBAction)GPACalAppStore:(id)sender {
+    
+    NSString *model = [[UIDevice currentDevice] model];
+    if ([model isEqualToString:@"iPhone Simulator"]) {
+        NSLog(@"iTunes App Store is not supported on the iOS simulator. Unable to open App Store page.");
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/us/app/gpa-cal/id873434927?mt=8"]];
+    }
+    
+}
+
+- (IBAction)GPACalGithub:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/SirArkimedes/GPACal"]];
+    
+}
+
+- (IBAction)githubSkillsUSA:(id)sender {
+    
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/SirArkimedes/SkillsUSA"]];
+}
+
+- (IBAction)githubDelivery:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/CTC-CompTech/delivery"]];
+    
+}
 
 #pragma mark - Videos
 
